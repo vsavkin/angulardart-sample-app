@@ -1,0 +1,5 @@
+name: easyconf
+dependencies:
+  browser: any
+  angular: any
+  uuid: any

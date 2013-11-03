@@ -1,0 +1,19 @@
+<li>
+  <span ng-if="ctrl.isShow" ng-class="{done: ctrl.item.done}">
+    <input type="checkbox" ng-model="ctrl.item.done" ng-if="ctrl.checkable"/>
+
+    {{ctrl.item.description}}
+    <button ng-click="ctrl.switchToEdit()">EDIT</button>
+    <button ng-click="ctrl.delete()">DELETE</button>
+  </span>
+
+  <span ng-if="ctrl.isEdit">
+    <form onsubmit="return false;">
+
+      <input type="text" ng-model="ctrl.editDescription"/>
+
+      <button ng-click="ctrl.save()" type="submit" ng-disabled="!ctrl.valid">SAVE</button>
+      <button ng-click="ctrl.cancel()" type="reset">CANCEL</button>
+    </form>
+  </span>
+</li>

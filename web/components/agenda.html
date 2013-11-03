@@ -1,0 +1,8 @@
+<h3>Agenda</h3>
+
+<input type="text" ng-model="ctrl.newAgendaDescription" required="true"/>
+<button ng-click="ctrl.addItem()" ng-disabled="!ctrl.valid">Add</button>
+
+<ul>
+  <agenda-item item="item" ng-repeat="item in ctrl.model" agenda="ctrl"></agenda-item>
+</ul>

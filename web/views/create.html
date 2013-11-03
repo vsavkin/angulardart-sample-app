@@ -1,0 +1,14 @@
+<h2>Create Conference</h2>
+
+<div create-conf-ctrl>
+  <form onsubmit="return false;">
+    <label>
+      Name
+      <input type="text" ng-model="ctrl.conf.name">
+    </label>
+
+    <agenda model="ctrl.conf.agenda" checkable="false"></agenda>
+
+    <button type="submit" ng-click="ctrl.create()" ng-disabled="!ctrl.conf.valid">Create Conf</button>
+  </form>
+</div>
