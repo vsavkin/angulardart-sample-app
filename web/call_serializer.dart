@@ -1,18 +1,18 @@
-part of easy_conf;
+part of talk_to_me;
 
-class Serializer {
-  String serializeConf(Conference conf, String id){
+class CallSerializer {
+  String serialize(Call call, String id){
     var map = {
         "id" : id,
-        "name": conf.name,
-        "agenda" : conf.agenda.map(_serializeItem).toList()
+        "name": call.name,
+        "agenda" : call.agenda.map(_serializeItem).toList()
     };
-    return JSON.stringify(map);
+    return JSON.encode(map);
   }
 
-  Conference deserializeConf(String str){
-    var json = JSON.parse(str);
-    return new Conference()
+  Call deserialize(String str){
+    var json = JSON.decode(str);
+    return new Call()
       ..id = json["id"]
       ..name = json["name"]
       ..agenda = json["agenda"].map(_deserializeItem).toList();

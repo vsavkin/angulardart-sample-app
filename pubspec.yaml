@@ -1,4 +1,4 @@
-name: easyconf
+name: talk_to_me
 dependencies:
   browser: any
   angular: any

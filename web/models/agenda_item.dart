@@ -1,4 +1,4 @@
-part of easy_conf;
+part of talk_to_me;
 
 class AgendaItem {
   String description;

@@ -1,6 +1,6 @@
-part of easy_conf;
+part of talk_to_me;
 
-class EasyConfRouteInitializer implements RouteInitializer {
+class AppRouteInitializer implements RouteInitializer {
   init(Router router, ViewFactory view) {
     router.root
       ..addRoute(name: 'create', path: '/create', enter: view('views/create.html'))
