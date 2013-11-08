@@ -1,5 +1,8 @@
-name: talk_to_me
+name: TalkToMe
+description: A server-less Web application built using AngularDart and WebRTC
 dependencies:
-  browser: any
-  angular: any
-  uuid: any
+  browser: ">=0.8.10"
+  angular: ">=0.9.0 <2.0.0"
+  uuid: ">=0.1.6 <=1.0.0"
+environment:
+  sdk: ">=0.8.10 <2.0.0"
