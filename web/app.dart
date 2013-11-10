@@ -14,6 +14,7 @@ part 'call_storage.dart';
 part 'app_route_initializer.dart';
 
 part 'lib/web_rtc_server.dart';
+part 'lib/web_rtc_client.dart';
 part 'components/toggle_component.dart';
 part 'components/agenda_component.dart';
 part 'models/call.dart';
@@ -21,6 +22,7 @@ part 'models/agenda_item.dart';
 part 'views/create_call_ctrl.dart';
 part 'views/show_call_ctrl.dart';
 part 'views/start_call_ctrl.dart';
+part 'views/join_call_ctrl.dart';
 
 
 class TalkToMeApp extends Module {
@@ -28,12 +30,14 @@ class TalkToMeApp extends Module {
     type(CreateCallCtrl);
     type(ShowCallCtrl);
     type(StartCallCtrl);
+    type(JoinCallCtrl);
     type(AgendaItemComponent);
     type(AgendaComponent);
     type(CallSerializer);
     type(CallStorage);
     type(ToggleComponent);
     type(WebRtcServer);
+    type(WebRtcClient);
 
     type(RouteInitializer, implementedBy: AppRouteInitializer);
     factory(NgRoutingUsePushState, (_) => new NgRoutingUsePushState.value(false));
