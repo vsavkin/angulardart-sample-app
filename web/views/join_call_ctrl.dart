@@ -11,6 +11,8 @@ class JoinCallCtrl {
 
   JoinCallCtrl(this.client);
 
+  get canGenerateAnswer => offer.isNotEmpty;
+
   generateAnswer(){
     client.generateAnswer(offer).then((_) => answer = _);
   }

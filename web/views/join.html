@@ -2,7 +2,7 @@
 
 <div join-call-ctrl>
   Offer <input type="text" ng-model="ctrl.offer"></input>
-  <button ng-click="ctrl.generateAnswer()">Answer</button>
+  <button ng-click="ctrl.generateAnswer()" ng-disabled="!ctrl.canGenerateAnswer">Answer</button>
 
   Answer <span>{{ctrl.answer}}</span>
 </div>

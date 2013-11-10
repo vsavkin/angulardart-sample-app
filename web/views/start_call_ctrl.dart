@@ -13,6 +13,8 @@ class StartCallCtrl {
     server.createOffer().then((_) => offer = _);
   }
 
+  get canStartCall => answer.isNotEmpty;
+
   startCall(){
   }
 }

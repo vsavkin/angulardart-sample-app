@@ -10,5 +10,5 @@
   Offer <span class="offer">{{ctrl.offer}}</span>
   Answer <input type="text" ng-model="ctrl.answer"></input>
 
-  <button ng-click="ctrl.startCall()">Start a Call</button>
+  <button ng-click="ctrl.startCall()" ng-disabled="!ctrl.canStartCall">Start a Call</button>
 </toggle>
