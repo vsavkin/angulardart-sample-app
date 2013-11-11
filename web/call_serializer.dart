@@ -18,7 +18,7 @@ class CallSerializer {
       ..agenda = json["agenda"].map(_deserializeItem).toList();
   }
 
-  _serializeItem(_) => {"description": _.description, "done": _.done};
+  _serializeItem(_) => {"description": _.description, "done": _.done, "priority" : _.priority};
 
-  _deserializeItem(_) => new AgendaItem(_["description"], _["done"]);
+  _deserializeItem(_) => new AgendaItem(_["description"], _["done"], _["priority"]);
 }

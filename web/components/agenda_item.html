@@ -2,7 +2,7 @@
   <span ng-if="ctrl.isShow" ng-class="{done: ctrl.item.done}">
     <input type="checkbox" ng-model="ctrl.item.done" ng-if="ctrl.checkable"/>
 
-    {{ctrl.item.description}}
+    {{ctrl.item.description}} Priority: {{ctrl.item.priority}}
     <button ng-click="ctrl.switchToEdit()">Edit</button>
     <button ng-click="ctrl.delete()">Delete</button>
   </span>
