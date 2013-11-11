@@ -45,18 +45,18 @@ class AgendaItemComponent {
   AgendaItem item;
 
   String mode = "show";
-  String editDescription;
+  String editItem;
 
   get isShow => mode == "show";
   get isEdit => mode == "edit";
 
   switchToEdit(){
-    editDescription = item.description;
+    editItem = item;
     mode = "edit";
   }
 
   save(){
-    item.description = editDescription;
+    item = editItem;
     mode = "show";
   }
 
@@ -72,7 +72,7 @@ class AgendaItemComponent {
     print("submit");
   }
 
-  get valid => editDescription.isNotEmpty;
+  get valid => editItem.valid;
 
   get checkable => agenda.checkable;
 }

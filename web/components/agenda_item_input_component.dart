@@ -20,6 +20,8 @@ class AgendaItemInputComponent {
     scope.$watch(() => item, (_){
       if(isEmptyItem(item)){
         description = "";
+      } else if (description == ""){
+        description = "${item.description} !${item.priority}";
       }
     });
     rebuildNewItem();
