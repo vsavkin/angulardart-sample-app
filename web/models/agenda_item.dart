@@ -5,5 +5,5 @@ class AgendaItem {
   bool done;
   num priority;
 
-  AgendaItem(this.description, this.done, [this.priority=3]);
+  AgendaItem(this.description, this.done, this.priority);
 }

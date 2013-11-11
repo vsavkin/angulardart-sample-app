@@ -11,6 +11,7 @@ import 'package:uuid/uuid.dart' show Uuid;
 
 part 'call_serializer.dart';
 part 'call_storage.dart';
+part 'parse_agenda_item.dart';
 part 'app_route_initializer.dart';
 
 part 'components/toggle_component.dart';
@@ -30,6 +31,7 @@ class TalkToMeApp extends Module {
     type(CallSerializer);
     type(CallStorage);
     type(ToggleComponent);
+    type(ParseAgendaItem);
 
     type(RouteInitializer, implementedBy: AppRouteInitializer);
     factory(NgRoutingUsePushState, (_) => new NgRoutingUsePushState.value(false));
