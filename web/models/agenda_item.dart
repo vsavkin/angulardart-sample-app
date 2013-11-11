@@ -6,4 +6,6 @@ class AgendaItem {
   num priority;
 
   AgendaItem(this.description, this.done, this.priority);
+
+  bool get valid => description.isNotEmpty && priority != null;
 }

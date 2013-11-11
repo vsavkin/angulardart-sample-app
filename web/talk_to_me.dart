@@ -16,6 +16,7 @@ part 'app_route_initializer.dart';
 
 part 'components/toggle_component.dart';
 part 'components/agenda_component.dart';
+part 'components/agenda_item_input_component.dart';
 part 'models/call.dart';
 part 'models/agenda_item.dart';
 part 'views/create_call_ctrl.dart';
@@ -26,12 +27,15 @@ class TalkToMeApp extends Module {
   TalkToMeApp(){
     type(CreateCallCtrl);
     type(ShowCallCtrl);
+
+    type(AgendaItemInputComponent);
     type(AgendaItemComponent);
     type(AgendaComponent);
+    type(ToggleComponent);
+
+    type(ParseAgendaItem);
     type(CallSerializer);
     type(CallStorage);
-    type(ToggleComponent);
-    type(ParseAgendaItem);
 
     type(RouteInitializer, implementedBy: AppRouteInitializer);
     factory(NgRoutingUsePushState, (_) => new NgRoutingUsePushState.value(false));

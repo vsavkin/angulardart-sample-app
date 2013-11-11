@@ -11,19 +11,23 @@ part of talk_to_me;
 )
 class AgendaComponent {
   bool checkable;
-  String newAgendaDescription = "";
+  AgendaItem newAgendaItem;
   List<AgendaItem> model;
 
+  AgendaComponent(){
+    newAgendaItem = new AgendaItem("", false, 3);
+  }
+
   addItem(){
-    model.add(new AgendaItem(newAgendaDescription, false));
-    newAgendaDescription = "";
+    model.add(newAgendaItem);
+    newAgendaItem = new AgendaItem("", false, 3);
   }
 
   deleteItem(AgendaItem item){
     model.remove(item);
   }
 
-  get valid => newAgendaDescription.isNotEmpty;
+  get valid => newAgendaItem.valid;
 }
 
 @NgComponent(
