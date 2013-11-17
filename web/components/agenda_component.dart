@@ -45,7 +45,7 @@ class AgendaItemComponent {
   AgendaItem item;
 
   String mode = "show";
-  String editItem;
+  AgendaItem editItem;
 
   get isShow => mode == "show";
   get isEdit => mode == "edit";
@@ -60,17 +60,9 @@ class AgendaItemComponent {
     mode = "show";
   }
 
-  delete(){
-    agenda.deleteItem(item);
-  }
+  delete() => agenda.deleteItem(item);
+  cancel() => mode = "show";
 
-  cancel(){
-    mode = "show";
-  }
-
-  submit(){
-    print("submit");
-  }
 
   get valid => editItem.valid;
 
