@@ -43,4 +43,5 @@ The project is still very much a work in progress.
 * Working with Shadow DOM => `toggle.html` and `toggle_component.dart`
 * Building a component => `agenda.html`, `agenda_item.html`, and `agenda_component.dart`
 * Setting up route (including default) => `app_route_initializer.dart`
+* Nested routes and nested views => `list.html`, and `app_route_initializer.dart`
 * Registering components, controllers, and other injectables => talk_to_me.dart
