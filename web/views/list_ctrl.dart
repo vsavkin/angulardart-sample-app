@@ -1,14 +1,14 @@
 part of talk_to_me;
 
 @NgController(
-    selector: '[welcome-ctrl]',
+    selector: '[list-ctrl]',
     publishAs: 'ctrl'
 )
-class WelcomeCtrl {
+class ListCtrl {
   Router router;
   List<Call> calls;
 
-  WelcomeCtrl(CallStorage storage, this.router){
+  ListCtrl(CallStorage storage, this.router){
     calls = storage.all;
   }
 }

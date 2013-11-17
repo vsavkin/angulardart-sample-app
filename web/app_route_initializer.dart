@@ -10,9 +10,9 @@ class AppRouteInitializer implements RouteInitializer {
       )
 
       ..addRoute(
-          name: 'welcome',
+          name: 'list',
           path: '/list',
-          enter: view('views/welcome.html'),
+          enter: view('views/list.html'),
           defaultRoute: true,
           mount: (Route route) => route
             ..addRoute(
