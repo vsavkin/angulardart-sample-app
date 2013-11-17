@@ -17,5 +17,5 @@ class ShowCallCtrl {
   _watchExp() => serializer.serialize(call, call.id);
   _store() => storage.store(call);
 
-  _confId(router) => router.activePath[0].parameters["confId"];
+  _confId(router) => router.activePath.last.parameters["confId"];
 }
