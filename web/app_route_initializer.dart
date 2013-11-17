@@ -17,7 +17,7 @@ class AppRouteInitializer implements RouteInitializer {
           mount: (Route route) => route
             ..addRoute(
                name: 'show',
-               path: "/:confId/show",
+               path: "/:callId/show",
                enter: view('views/show.html'))
       );
   }
