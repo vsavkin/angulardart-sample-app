@@ -19,12 +19,13 @@ part 'components/agenda_component.dart';
 part 'components/agenda_item_input_component.dart';
 part 'models/call.dart';
 part 'models/agenda_item.dart';
+part 'views/welcome_ctrl.dart';
 part 'views/create_call_ctrl.dart';
 part 'views/show_call_ctrl.dart';
 
-
 class TalkToMeApp extends Module {
   TalkToMeApp(){
+    type(WelcomeCtrl);
     type(CreateCallCtrl);
     type(ShowCallCtrl);
 

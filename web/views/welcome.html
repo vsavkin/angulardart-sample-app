@@ -1,3 +1,10 @@
-<div>
+<div welcome-ctrl>
   <a ng-href="#/create">Create</a>
+
+  <h2>Calls</h2>
+  <ul>
+    <li ng-repeat="call in ctrl.calls">
+      <a href="#/{{call.id}}/show">{{call.name}}</a>
+    </li>
+  </ul>
 </div>
