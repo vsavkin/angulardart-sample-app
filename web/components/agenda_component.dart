@@ -11,19 +11,23 @@ part of talk_to_me;
 )
 class AgendaComponent {
   bool checkable;
-  String newAgendaDescription = "";
+  AgendaItem newAgendaItem;
   List<AgendaItem> model;
 
+  AgendaComponent(){
+    newAgendaItem = new AgendaItem("", false, 3);
+  }
+
   addItem(){
-    model.add(new AgendaItem(newAgendaDescription, false));
-    newAgendaDescription = "";
+    model.add(newAgendaItem);
+    newAgendaItem = new AgendaItem("", false, 3);
   }
 
   deleteItem(AgendaItem item){
     model.remove(item);
   }
 
-  get valid => newAgendaDescription.isNotEmpty;
+  get valid => newAgendaItem.valid;
 }
 
 @NgComponent(
@@ -41,18 +45,18 @@ class AgendaItemComponent {
   AgendaItem item;
 
   String mode = "show";
-  String editDescription;
+  String editItem;
 
   get isShow => mode == "show";
   get isEdit => mode == "edit";
 
   switchToEdit(){
-    editDescription = item.description;
+    editItem = item;
     mode = "edit";
   }
 
   save(){
-    item.description = editDescription;
+    item = editItem;
     mode = "show";
   }
 
@@ -68,7 +72,7 @@ class AgendaItemComponent {
     print("submit");
   }
 
-  get valid => editDescription.isNotEmpty;
+  get valid => editItem.valid;
 
   get checkable => agenda.checkable;
 }
