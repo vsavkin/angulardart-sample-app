@@ -12,7 +12,7 @@ class CreateCallCtrl {
   CreateCallCtrl(this.storage, this.router);
 
   create(){
-    var confId = storage.store(call);
+    var callId = storage.store(call);
     router.go("list.show", {"callId": callId});
   }
 }
