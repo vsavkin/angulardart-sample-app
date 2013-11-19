@@ -3,15 +3,15 @@ part of talk_to_me;
 @NgComponent(
     selector: 'toggle',
     templateUrl: 'components/toggle.html',
-    publishAs: 'ctrl',
-    map: const {
-      'open-label': '@openLabel',
-      'close-label': '@closeLabel'
-    }
+    publishAs: 'ctrl'
 )
 class ToggleComponent {
   bool open = false;
+
+  @NgAttr("openLabel")
   String openLabel;
+
+  @NgAttr("closeLabel")
   String closeLabel;
 
   toggle() => open = !open;

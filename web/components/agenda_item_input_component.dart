@@ -3,13 +3,12 @@ part of talk_to_me;
 @NgComponent(
     selector: 'agenda-item-input',
     templateUrl: 'components/agenda_item_input.html',
-    publishAs: 'ctrl',
-    map: const {
-      'item': '<=>item',
-    }
+    publishAs: 'ctrl'
 )
 class AgendaItemInputComponent {
   String description;
+
+  @NgTwoWay("item")
   AgendaItem item;
 
   ParseAgendaItem parseAgendaItem;

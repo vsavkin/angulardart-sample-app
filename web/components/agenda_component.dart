@@ -3,15 +3,14 @@ part of talk_to_me;
 @NgComponent(
     selector: 'agenda',
     templateUrl: 'components/agenda.html',
-    publishAs: 'ctrl',
-    map: const {
-        'model': '<=>model',
-        'checkable': '=>!checkable'
-    }
+    publishAs: 'ctrl'
 )
 class AgendaComponent {
+  @NgOneWayOneTime("checkable")
   bool checkable;
   AgendaItem newAgendaItem;
+
+  @NgTwoWay("model")
   List<AgendaItem> model;
 
   AgendaComponent(){
@@ -34,14 +33,13 @@ class AgendaComponent {
     selector: 'agenda-item',
     templateUrl: 'components/agenda_item.html',
     cssUrl: 'components/css/agenda_item.css',
-    publishAs: 'ctrl',
-    map: const {
-        'item': '<=>item',
-        'agenda': '=>!agenda'
-    }
+    publishAs: 'ctrl'
 )
 class AgendaItemComponent {
+  @NgOneWayOneTime("agenda")
   AgendaComponent agenda;
+
+  @NgTwoWay("item")
   AgendaItem item;
 
   String mode = "show";
