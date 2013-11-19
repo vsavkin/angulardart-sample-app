@@ -9,13 +9,13 @@ class ShowCallCtrl {
   CallStorage storage;
   CallSerializer serializer;
 
-  ShowCallCtrl(this.storage, this.serializer, Router router, Scope scope){
-    call = storage.find(_callId(router));
+  ShowCallCtrl(this.storage, this.serializer, RouteProvider routeProvider, Scope scope){
+    call = storage.find(_callId(routeProvider));
     scope.$watch(_watchExp, _store);
   }
 
   _watchExp() => serializer.serialize(call, call.id);
   _store() => storage.store(call);
 
-  _callId(router) => router.activePath.last.parameters["callId"];
+  _callId(routeProvider) => routeProvider.parameters["callId"];
 }
