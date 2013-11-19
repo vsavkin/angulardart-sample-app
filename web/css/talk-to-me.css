@@ -1,0 +1,25 @@
+header {
+    height: 150px;
+    background-color: #f0f0f0;
+    border-top: 5px solid #000000;
+    border-bottom: 1px solid RGB(212,212,212);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+}
+
+ul { padding: 0;}
+
+ul li {
+    padding: 8px 12px 8px 25px;
+    margin: 0 0 5px;
+    display: block;
+    font-size: 18px;
+    font-size: 1.8rem;
+    background: grey;
+}
+
+ul li > a { color: #333; }
+ul li > a:hover { color: #333; text-decoration: none; }
+
+agenda-item-input { position: relative; margin-bottom: 20px; }
+agenda-item-input div { position: absolute; }
+
