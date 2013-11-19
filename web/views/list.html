@@ -1,14 +1,12 @@
-<div ng-bind-route="list">
-  <div list-ctrl>
-    <a ng-href="#/create">Create</a>
+<div list-ctrl>
+  <a ng-href="#/create">Create</a>
 
-    <h2>Calls</h2>
-    <ul>
-      <li ng-repeat="call in ctrl.calls">
-        <a href="#/list/{{call.id}}/show">{{call.name}}</a>
-      </li>
-    </ul>
-  </div>
-
-  <ng-view></ng-view>
+  <h2>Calls</h2>
+  <ul>
+    <li ng-repeat="call in ctrl.calls">
+      <a href="#/list/{{call.id}}/show">{{call.name}}</a>
+    </li>
+  </ul>
 </div>
+
+<ng-view></ng-view>
