@@ -6,5 +6,12 @@ part of talk_to_me;
     publishAs: 'ctrl',
     applyAuthorStyles: true
 )
-class CallComponent {
+class CallComponent implements NgAttachAware {
+  Object videoSrc;
+
+  attach(){
+    html.window.navigator.getUserMedia(video:true, audio: true).then((localStream) {
+      videoSrc = html.Url.createObjectUrl(localStream);
+    });
+  }
 }
