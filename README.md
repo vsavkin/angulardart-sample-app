@@ -37,11 +37,16 @@ The project is still very much a work in progress.
 * Application state management
 * Shadow DOM
 * Use factory, value, CreationStrategy, and Visibility
+* Configuring injectables
+* HTTP
 
 ## Index
 
 * Working with Shadow DOM => `toggle.html` and `toggle_component.dart`
-* Building a component => `agenda.html`, `agenda_item.html`, and `agenda_component.dart`
+* Building a component => `agenda.html`, `agenda_item.html`, , `agenda_component.dart`, `agenda_component_input.dart`
 * Setting up route (including default) => `app_route_initializer.dart`
 * Nested routes and nested views => `list.html`, and `app_route_initializer.dart`
+* Using RouteProvider => `show_call_ctrl.dart`
+* Using filters => `agenda.html` and `list.html`
 * Registering components, controllers, and other injectables => talk_to_me.dart
+* Creating services => `parse_agenda_item.dart`, `storage.dart`
