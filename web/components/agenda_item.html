@@ -1,5 +1,7 @@
 <div ng-if="ctrl.isShow" ng-class="{done: ctrl.item.done}">
   <div class="input-group">
+    <span class="priority-indicator priority-{{ctrl.item.priority}}"></span>
+
     <input type="checkbox" ng-model="ctrl.item.done" ng-if="ctrl.checkable"/>
 
     {{ctrl.item.description}}

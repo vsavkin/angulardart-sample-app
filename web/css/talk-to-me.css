@@ -51,3 +51,23 @@ agenda-item-input {
 .input-group { font-size: 1.8rem; border-bottom: 1px solid lightgrey; padding-bottom: 10px;}
 .input-group-btn { vertical-align: top;}
 
+
+.priority-indicator {
+    float: left;
+    height: 30px;
+    width: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.priority-1 {
+    background-color: #FFB5B5;
+}
+
+.priority-2 {
+    background-color: #B5C6FF;
+}
+
+.priority-3 {
+    background-color: darkgrey;
+}
