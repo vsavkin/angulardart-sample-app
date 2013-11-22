@@ -64,6 +64,12 @@ agenda-item-input {
     background-color: grey;
 }
 
+.empty-call {
+    color: darkgrey;
+    font-size: 2rem;
+    text-align: center;
+}
+
 .priority-1 {
     background-color: #FFB5B5;
 }
