@@ -60,6 +60,10 @@ agenda-item-input {
     display: inline-block;
 }
 
+.selected {
+    background-color: grey;
+}
+
 .priority-1 {
     background-color: #FFB5B5;
 }

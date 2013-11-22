@@ -8,8 +8,9 @@
     </div>
   </div>
 
+  {{magic}}
   <ul>
-    <li ng-repeat="call in ctrl.calls">
+    <li ng-repeat="call in ctrl.calls" ng-class="{'selected' : ctrl.isSelected(call)}">
       <a href="#/list/{{call.id}}/show">{{call.name}}</a>
     </li>
   </ul>
