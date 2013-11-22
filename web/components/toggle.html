@@ -1,8 +1,7 @@
 <div ng-if="ctrl.open">
-  <button ng-click="ctrl.toggle()">{{ctrl.closeLabel}}</button>
-  <content></content>
+  <content select="when-open"></content>
 </div>
 
 <div ng-if="!ctrl.open">
-  <button ng-click="ctrl.toggle()">{{ctrl.openLabel}}</button>
+  <content select="when-closed"></content>
 </div>
