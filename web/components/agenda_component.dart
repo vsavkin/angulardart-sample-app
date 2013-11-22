@@ -55,7 +55,9 @@ class AgendaItemComponent {
   }
 
   save(){
-    item = editItem;
+    item.description = editItem.description;
+    item.priority = editItem.priority;
+
     mode = "show";
   }
 
