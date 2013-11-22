@@ -15,6 +15,7 @@ part 'parse_agenda_item.dart';
 part 'app_route_initializer.dart';
 
 part 'components/toggle_component.dart';
+part 'components/call_component.dart';
 part 'components/agenda_component.dart';
 part 'components/agenda_item_input_component.dart';
 part 'models/call.dart';
@@ -32,6 +33,7 @@ class TalkToMeApp extends Module {
     type(AgendaItemInputComponent);
     type(AgendaItemComponent);
     type(AgendaComponent);
+    type(CallComponent);
     type(ToggleComponent);
 
     type(ParseAgendaItem);

@@ -27,6 +27,16 @@ ul li > a:hover { color: #333; text-decoration: none; }
     margin-top: 20px;
 }
 
+.call-row {
+    background-color: darkgrey;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.call-row button {
+    float: right;
+}
+
 .create-row {
     margin-top: 30px;
 }
@@ -80,4 +90,14 @@ agenda-item-input {
 
 .priority-3 {
     background-color: darkgrey;
+}
+
+.video-box {
+    border: 1px solid #000000;
+    float: left;
+}
+
+.video-box-transfer {
+    float: left;
+    margin: 70px 20px;
 }
