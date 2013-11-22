@@ -3,10 +3,10 @@
 <div class="input-group">
   <agenda-item-input item="ctrl.newAgendaItem"></agenda-item-input>
   <span class="input-group-btn">
-    <button class="btn btn-default" ng-click="ctrl.addItem()" ng-disabled="!ctrl.valid">Add</button>
+    <button class="btn btn-default" ng-click="ctrl.addItem()" ng-disabled="!ctrl.valid">
+      <span class="glyphicon glyphicon-plus"></span>
+    </button>
   </span>
 </div>
 
-<ul>
-  <agenda-item ng-repeat="item in ctrl.model" item="item" agenda="ctrl"></agenda-item>
-</ul>
+<agenda-item ng-repeat="item in ctrl.model" item="item" agenda="ctrl"></agenda-item>

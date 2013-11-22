@@ -1,7 +1,13 @@
-<div list-ctrl>
-  <a ng-href="#/create">Create</a>
+<div class="col-md-4" list-ctrl>
+  <div class="row">
+    <div class="col-md-9">
+      <h2>Calls</h2>
+    </div>
+    <div class="col-md-3">
+      <a class="btn btn-primary btn-create" ng-href="#/create">Create</a>
+    </div>
+  </div>
 
-  <h2>Calls</h2>
   <ul>
     <li ng-repeat="call in ctrl.calls">
       <a href="#/list/{{call.id}}/show">{{call.name}}</a>
@@ -9,4 +15,4 @@
   </ul>
 </div>
 
-<ng-view></ng-view>
+<ng-view class="col-md-8"></ng-view>

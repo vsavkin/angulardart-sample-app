@@ -1,25 +1,53 @@
 header {
     height: 150px;
-    background-color: #f0f0f0;
+    background-color: grey;
     border-top: 5px solid #000000;
     border-bottom: 1px solid RGB(212,212,212);
-    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
 }
 
-ul { padding: 0;}
+h1 a { color: #f0f0f0; font-size: 40px;}
+h1 a:hover { color: #f0f0f0; font-size: 40px; text-decoration: none;}
+.row {
+    background-color: #f0f0f0;
+}
+ul { padding: 0; }
 
 ul li {
     padding: 8px 12px 8px 25px;
     margin: 0 0 5px;
     display: block;
-    font-size: 18px;
     font-size: 1.8rem;
-    background: grey;
+    background: darkgrey;
 }
 
-ul li > a { color: #333; }
+ul li > a { color: #333; display: inline-block; width: 100%;}
 ul li > a:hover { color: #333; text-decoration: none; }
 
-agenda-item-input { position: relative; margin-bottom: 20px; }
-agenda-item-input div { position: absolute; }
+.btn-create {
+    margin-top: 20px;
+}
+
+.create-row {
+    margin-top: 30px;
+}
+
+agenda-item {
+    display: block;
+    margin: 10px 0;
+}
+
+.done {
+    color: lightgrey;
+}
+
+agenda-item-input {
+    position: relative;
+    padding-bottom: 20px;
+    overflow: hidden;
+    display: block;
+}
+.container { padding: 40px 0;}
+.hint { position: absolute; font-size: 12px; color: #333333; }
+.input-group { font-size: 1.8rem; border-bottom: 1px solid lightgrey; padding-bottom: 10px;}
+.input-group-btn { vertical-align: top;}
 

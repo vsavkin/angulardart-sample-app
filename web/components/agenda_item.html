@@ -1,20 +1,31 @@
-<li>
-  <span ng-if="ctrl.isShow" ng-class="{done: ctrl.item.done}">
+<div ng-if="ctrl.isShow" ng-class="{done: ctrl.item.done}">
+  <div class="input-group">
     <input type="checkbox" ng-model="ctrl.item.done" ng-if="ctrl.checkable"/>
 
-    Description: {{ctrl.item.description}} Priority: {{ctrl.item.priority}}
+    {{ctrl.item.description}}
 
-    <button ng-click="ctrl.switchToEdit()">Edit</button>
-    <button ng-click="ctrl.delete()">Delete</button>
-  </span>
+    <span class="input-group-btn">
+      <button class="btn btn-default" ng-click="ctrl.switchToEdit()">
+        <span class="glyphicon glyphicon-edit"></span>
+      </button>
+      <button class="btn btn-default" ng-click="ctrl.delete()">
+        <span class="glyphicon glyphicon-remove"></span>
+      </button>
+    </span>
+  </div>
+</div>
 
-  <span ng-if="ctrl.isEdit">
-    <form onsubmit="return false;">
+<div ng-if="ctrl.isEdit">
+  <div class="input-group">
+    <agenda-item-input item="ctrl.editItem"></agenda-item-input>
 
-      <agenda-item-input item="ctrl.editItem"></agenda-item-input>
-
-      <button ng-click="ctrl.save()" type="submit" ng-disabled="!ctrl.valid">Save</button>
-      <button ng-click="ctrl.cancel()" type="reset">Cancel</button>
-    </form>
-  </span>
-</li>
+      <span class="input-group-btn">
+        <button class="btn btn-default" ng-click="ctrl.save()" type="submit" ng-disabled="!ctrl.valid">
+          <span class="glyphicon glyphicon-floppy-disk"></span>
+        </button>
+        <button class="btn btn-default" ng-click="ctrl.cancel()" type="reset">
+          <span class="glyphicon glyphicon-ban-circle"></span>
+        </button>
+      </span>
+  </div>
+</div>
