@@ -3,7 +3,8 @@ part of talk_to_me;
 @NgComponent(
     selector: 'agenda-item-input',
     templateUrl: 'components/agenda_item_input.html',
-    publishAs: 'ctrl'
+    publishAs: 'ctrl',
+    applyAuthorStyles: true
 )
 class AgendaItemInputComponent {
   String description;

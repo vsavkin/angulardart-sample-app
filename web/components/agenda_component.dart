@@ -3,7 +3,8 @@ part of talk_to_me;
 @NgComponent(
     selector: 'agenda',
     templateUrl: 'components/agenda.html',
-    publishAs: 'ctrl'
+    publishAs: 'ctrl',
+    applyAuthorStyles: true
 )
 class AgendaComponent {
   @NgOneWayOneTime("checkable")
@@ -32,7 +33,7 @@ class AgendaComponent {
 @NgComponent(
     selector: 'agenda-item',
     templateUrl: 'components/agenda_item.html',
-    cssUrl: 'components/css/agenda_item.css',
+    applyAuthorStyles: true,
     publishAs: 'ctrl'
 )
 class AgendaItemComponent {
@@ -54,7 +55,9 @@ class AgendaItemComponent {
   }
 
   save(){
-    item = editItem;
+    item.description = editItem.description;
+    item.priority = editItem.priority;
+
     mode = "show";
   }
 

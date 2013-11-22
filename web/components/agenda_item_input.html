@@ -1,4 +1,4 @@
-<input type="text" ng-model="ctrl.description" ng-keyup="ctrl.rebuildNewItem()"/>
-<div ng-if="ctrl.valid">
+<input type="text" class="form-control" ng-model="ctrl.description" ng-keyup="ctrl.rebuildNewItem()"/>
+<div class="hint" ng-if="ctrl.valid">
   Description: "{{ctrl.item.description}}" Priority: {{ctrl.item.priority}}
 </div>

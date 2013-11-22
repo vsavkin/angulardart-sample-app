@@ -4,11 +4,22 @@
   <script type="application/dart" src="talk_to_me.dart"></script>
   <script src="packages/browser/dart.js"></script>
   <title>Talk to Me!</title>
+
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/talk-to-me.css"/>
 </head>
 
 <body>
-  <h1><a href="#">Talk to Me!</a></h1>
+<header>
+  <div class="container">
+    <h1><a href="#">Talk to Me!</a></h1>
+  </div>
+</header>
 
-  <ng-view></ng-view>
+<div class="row">
+  <div class="container">
+    <ng-view></ng-view>
+  </div>
+</div>
 </body>
 </html>
