@@ -9,4 +9,4 @@
   </span>
 </div>
 
-<agenda-item ng-repeat="item in ctrl.model" item="item" agenda="ctrl"></agenda-item>
+<agenda-item ng-repeat="item in ctrl.model | orderBy: 'extPriority'" item="item" agenda="ctrl"></agenda-item>
