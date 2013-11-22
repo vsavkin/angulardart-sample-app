@@ -12,5 +12,8 @@ class ListCtrl {
     calls = storage.all;
   }
 
-  isSelected(Call call) => router.activePath.last.parameters["callId"] == call.id;
+  isSelected(Call call) => _callId == call.id;
+  get isAnySelected => _callId != null;
+
+  get _callId => router.activePath.last.parameters["callId"];
 }
