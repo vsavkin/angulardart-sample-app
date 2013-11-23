@@ -9,14 +9,15 @@ import 'package:angular/routing/module.dart';
 import 'package:logging/logging.dart';
 import 'package:uuid/uuid.dart' show Uuid;
 
-part 'call_serializer.dart';
-part 'call_storage.dart';
-part 'parse_agenda_item.dart';
+part 'services/call_serializer.dart';
+part 'services/call_storage.dart';
+part 'services/parse_agenda_item.dart';
 part 'app_route_initializer.dart';
 
 part 'components/toggle_component.dart';
 part 'components/call_component.dart';
 part 'components/agenda_component.dart';
+part 'components/agenda_item_component.dart';
 part 'components/agenda_item_input_component.dart';
 part 'models/call.dart';
 part 'models/agenda_item.dart';
