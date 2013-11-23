@@ -1,0 +1,19 @@
+<div class="row call-row">
+  <toggle toggle-property="open">
+    <when-closed>
+      <button class="btn btn-default" ng-click="open = true">
+        <span class="glyphicon glyphicon-earphone"></span> Call
+      </button>
+    </when-closed>
+
+    <when-open>
+      <video ng-src="{{ctrl.videoSrc}}" width="213" height="161" autoplay="autoplay" class="video-box"></video>
+      <span class="glyphicon glyphicon-transfer video-box-transfer"></span>
+      <img src="images/cat.jpg" class="video-box">
+
+      <button class="btn btn-default" ng-click="open = false">
+        <span class="glyphicon glyphicon-phone-alt"></span> Hang up
+      </button>
+    </when-open>
+  </toggle>
+</div>
