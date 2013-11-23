@@ -1,5 +1,5 @@
 name: talk_to_me
-description: A server-less Web application built using AngularDart and WebRTC
+description: A sample web application built using AngularDart
 dependencies:
   browser: ">=0.8.10"
   angular: ">=0.9.0 <2.0.0"
