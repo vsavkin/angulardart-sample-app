@@ -1,6 +1,6 @@
 part of talk_to_me;
 
-class AppRouteInitializer implements RouteInitializer {
+class TalkToMeRouteInitializer implements RouteInitializer {
   init(Router router, ViewFactory view) {
     router.root
       ..addRoute(

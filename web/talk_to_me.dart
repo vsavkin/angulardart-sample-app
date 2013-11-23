@@ -12,7 +12,7 @@ import 'package:uuid/uuid.dart' show Uuid;
 part 'services/call_serializer.dart';
 part 'services/call_storage.dart';
 part 'services/parse_agenda_item.dart';
-part 'app_route_initializer.dart';
+part 'talk_to_me_route_initializer.dart';
 
 part 'components/toggle_component.dart';
 part 'components/call_component.dart';
@@ -41,7 +41,7 @@ class TalkToMeApp extends Module {
     type(CallSerializer);
     type(CallStorage);
 
-    type(RouteInitializer, implementedBy: AppRouteInitializer);
+    type(RouteInitializer, implementedBy: TalkToMeRouteInitializer);
     factory(NgRoutingUsePushState, (_) => new NgRoutingUsePushState.value(false));
   }
 }
