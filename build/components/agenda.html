@@ -1,0 +1,12 @@
+<h3>Call Agenda</h3>
+
+<div class="input-group">
+  <agenda-item-input item="ctrl.newAgendaItem"></agenda-item-input>
+  <span class="input-group-btn">
+    <button class="btn btn-default" ng-click="ctrl.addItem()" ng-disabled="!ctrl.valid">
+      <span class="glyphicon glyphicon-plus"></span>
+    </button>
+  </span>
+</div>
+
+<agenda-item ng-repeat="item in ctrl.model | orderBy: 'extPriority'" item="item" agenda="ctrl"></agenda-item>

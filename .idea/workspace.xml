@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c684694c-8910-42f7-9070-f3dd1fa88382" name="Default" comment="" />
+    <ignored path="easyconf.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="easyconf" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="481">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/web/lib/web_rtc_server.dart" />
+        <option value="$PROJECT_DIR$/web/models/task_list.dart" />
+        <option value="$PROJECT_DIR$/web/task_list_serializer.dart" />
+        <option value="$PROJECT_DIR$/web/task_list_storage.dart" />
+        <option value="$PROJECT_DIR$/web/components/task_list.html" />
+        <option value="$PROJECT_DIR$/web/components/task_list_component.dart" />
+        <option value="$PROJECT_DIR$/web/views/show_task_list_ctrl.dart" />
+        <option value="$PROJECT_DIR$/web/call_serializer.dart" />
+        <option value="$PROJECT_DIR$/web/app.dart" />
+        <option value="$PROJECT_DIR$/web/agenda_item_parser.dart" />
+        <option value="$PROJECT_DIR$/test/src/agenda_item_parser.dart" />
+        <option value="$PROJECT_DIR$/test/src/agenda_item_parser_test.dart" />
+        <option value="$PROJECT_DIR$/test/app_test.dart" />
+        <option value="$PROJECT_DIR$/test/karma.conf.js" />
+        <option value="$PROJECT_DIR$/test/talk_to_me_test.dart" />
+        <option value="$PROJECT_DIR$/web/parse_agenda_item.dart" />
+        <option value="$PROJECT_DIR$/tasks.dart" />
+        <option value="$PROJECT_DIR$/build/compiled.dart" />
+        <option value="$PROJECT_DIR$/tool/hop_runner.dart" />
+        <option value="$PROJECT_DIR$/web/models/task_list_item.dart" />
+        <option value="$PROJECT_DIR$/web/components/task_list_item.html" />
+        <option value="$PROJECT_DIR$/test/run_test.html" />
+        <option value="$PROJECT_DIR$/test/src/parse_agenda_item_test.dart" />
+        <option value="$PROJECT_DIR$/web/views/welcome_ctrl.dart" />
+        <option value="$PROJECT_DIR$/web/views/welcome.html" />
+        <option value="$PROJECT_DIR$/web/app_route_initializer.dart" />
+        <option value="$PROJECT_DIR$/web/views/create_call_ctrl.dart" />
+        <option value="$PROJECT_DIR$/web/views/create.html" />
+        <option value="$PROJECT_DIR$/web/views/list_ctrl.dart" />
+        <option value="$PROJECT_DIR$/web/views/list.html" />
+        <option value="$PROJECT_DIR$/web/views/show_call_ctrl.dart" />
+        <option value="$PROJECT_DIR$/web/models/agenda_item.dart" />
+        <option value="$PROJECT_DIR$/web/components/toggle.html" />
+        <option value="$PROJECT_DIR$/web/components/agenda_item_input.html" />
+        <option value="$PROJECT_DIR$/web/components/agenda_item_input_component.dart" />
+        <option value="$PROJECT_DIR$/web/components/toggle_component.dart" />
+        <option value="$PROJECT_DIR$/web/components/agenda_item.html" />
+        <option value="$PROJECT_DIR$/web/views/call_ctrl.dart" />
+        <option value="$PROJECT_DIR$/web/css/talk-to-me.css" />
+        <option value="$PROJECT_DIR$/web/components/call.html" />
+        <option value="$PROJECT_DIR$/web/components/call_component.dart" />
+        <option value="$PROJECT_DIR$/web/components/agenda.html" />
+        <option value="$PROJECT_DIR$/web/call_storage.dart" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/web/app.html" />
+        <option value="$PROJECT_DIR$/web/views/show.html" />
+        <option value="$PROJECT_DIR$/web/components/agenda_item_component.dart" />
+        <option value="$PROJECT_DIR$/web/components/agenda_component.dart" />
+        <option value="$PROJECT_DIR$/web/talk_to_me.dart" />
+        <option value="$PROJECT_DIR$/web/talk_to_me_route_initializer.dart" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="49" />
+    <option name="y" value="22" />
+    <option name="width" value="1391" />
+    <option name="height" value="878" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state />
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="easyconf">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Problems">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="easyconf">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="easyconf">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="easyconf">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="easyconf">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="components">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="easyconf">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="web">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="easyconf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="easyconf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="easyconf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="easyconf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="easyconf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="web-ide.project.structure" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../angular" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/components" />
+      <recent name="$PROJECT_DIR$/web/views" />
+      <recent name="$PROJECT_DIR$/web/lib" />
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/services" />
+      <recent name="$PROJECT_DIR$/tool" />
+      <recent name="$PROJECT_DIR$/web/components" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.app.html">
+    <configuration default="false" name="Test: app_test" type="DartUnitRunConfigurationType" factoryName="DartUnit" temporary="true">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" value="$PROJECT_DIR$/test/app_test.dart" />
+      <option name="scope" value="ALL" />
+      <option name="testName" value="app_test" />
+      <RunnerSettings RunnerId="DartUnitRunner" />
+      <ConfigurationWrapper RunnerId="DartUnitRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="app.html" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" engineId="dartium" uri="http://localhost:63342/easyconf/web/app.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" value="$PROJECT_DIR$/test/app_test.dart" />
+      <option name="scope" value="ALL" />
+      <option name="testName" value="app_test" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="DartUnit.Test: app_test" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.app.html" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.app.html" />
+        <item index="1" class="java.lang.String" itemvalue="DartUnit.Test: app_test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c684694c-8910-42f7-9070-f3dd1fa88382" name="Default" comment="" />
+      <created>1383233663233</created>
+      <updated>1383233663233</updated>
+    </task>
+    <task id="LOCAL-00001" summary="implements Storage">
+      <created>1383249091054</created>
+      <updated>1383249091054</updated>
+    </task>
+    <task id="LOCAL-00002" summary="generes ids for conferences when needed">
+      <created>1383249669817</created>
+      <updated>1383249669817</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create -&gt; show">
+      <created>1383494170212</created>
+      <updated>1383494170212</updated>
+    </task>
+    <task id="LOCAL-00004" summary="splits into multiple files">
+      <created>1383494940491</created>
+      <updated>1383494940491</updated>
+    </task>
+    <task id="LOCAL-00005" summary="implements delete">
+      <created>1383496447284</created>
+      <updated>1383496447284</updated>
+    </task>
+    <task id="LOCAL-00006" summary="disables buttons when fields are empty">
+      <created>1383497120492</created>
+      <updated>1383497120492</updated>
+    </task>
+    <task id="LOCAL-00007" summary="save conf on every update">
+      <created>1383514650428</created>
+      <updated>1383514650428</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refactoring">
+      <created>1383515456489</created>
+      <updated>1383515456489</updated>
+    </task>
+    <task id="LOCAL-00009" summary="updates Angular to 0.9&#10;">
+      <created>1383700609678</created>
+      <updated>1383700609678</updated>
+    </task>
+    <task id="LOCAL-00010" summary="adds README">
+      <created>1383740551176</created>
+      <updated>1383740551177</updated>
+    </task>
+    <task id="LOCAL-00011" summary="renames the app into TalkToMe">
+      <created>1383741453393</created>
+      <updated>1383741453393</updated>
+    </task>
+    <task id="LOCAL-00012" summary="changes Angular.Dart to AngularDart in the readme">
+      <created>1383741601710</created>
+      <updated>1383741601710</updated>
+    </task>
+    <task id="LOCAL-00013" summary="adds env config to pubspec.yaml&#10;">
+      <created>1383879184668</created>
+      <updated>1383879184668</updated>
+    </task>
+    <task id="LOCAL-00014" summary="adds env config to pubspec.yaml&#10;">
+      <created>1383879314955</created>
+      <updated>1383879314955</updated>
+    </task>
+    <task id="LOCAL-00015" summary="updates README">
+      <created>1383883053353</created>
+      <updated>1383883053353</updated>
+    </task>
+    <task id="LOCAL-00016" summary="adds the toggle component">
+      <created>1384105314892</created>
+      <updated>1384105314892</updated>
+    </task>
+    <task id="LOCAL-00017" summary="adds WebRtcServer that can create an offer to establish a peer-to-peer connection">
+      <created>1384106131346</created>
+      <updated>1384106131346</updated>
+    </task>
+    <task id="LOCAL-00018" summary="adds StartCallCtrl and wires it up">
+      <created>1384106206008</created>
+      <updated>1384106206008</updated>
+    </task>
+    <task id="LOCAL-00019" summary="adds WebRTCClient that generates an answes to offer">
+      <created>1384107598322</created>
+      <updated>1384107598322</updated>
+    </task>
+    <task id="LOCAL-00020" summary="adds a simple join screen to generate answer for an offer">
+      <created>1384107624940</created>
+      <updated>1384107624940</updated>
+    </task>
+    <task id="LOCAL-00021" summary="disables the join and start buttons when the corresponding text fields are empty">
+      <created>1384108688197</created>
+      <updated>1384108688197</updated>
+    </task>
+    <task id="LOCAL-00022" summary="deletes RTC-related code">
+      <created>1384200585216</created>
+      <updated>1384200585216</updated>
+    </task>
+    <task id="LOCAL-00023" summary="adds the priority field to AgendaItem">
+      <created>1384200901255</created>
+      <updated>1384200901255</updated>
+    </task>
+    <task id="LOCAL-00024" summary="adds ParseAgendaItem">
+      <created>1384206133580</created>
+      <updated>1384206133580</updated>
+    </task>
+    <task id="LOCAL-00025" summary="adds index to the readme">
+      <created>1384208441625</created>
+      <updated>1384208441626</updated>
+    </task>
+    <task id="LOCAL-00026" summary="extracts the AgendaItemInput component to work around the fact that there are no converters">
+      <created>1384210899106</created>
+      <updated>1384210899106</updated>
+    </task>
+    <task id="LOCAL-00027" summary="wires up AgendaItemInput into edit">
+      <created>1384211455559</created>
+      <updated>1384211455559</updated>
+    </task>
+    <task id="LOCAL-00028" summary="fixes a type annotation">
+      <created>1384726967217</created>
+      <updated>1384726967217</updated>
+    </task>
+    <task id="LOCAL-00029" summary="adds a method to CallStorage returning all stored calls">
+      <created>1384727861600</created>
+      <updated>1384727861600</updated>
+    </task>
+    <task id="LOCAL-00030" summary="renders a list of all created calls on the welcome page">
+      <created>1384727874203</created>
+      <updated>1384727874203</updated>
+    </task>
+    <task id="LOCAL-00031" summary="removes the join route">
+      <created>1384727918018</created>
+      <updated>1384727918018</updated>
+    </task>
+    <task id="LOCAL-00032" summary="models show as a nested route">
+      <created>1384729962603</created>
+      <updated>1384729962603</updated>
+    </task>
+    <task id="LOCAL-00033" summary="renames Welcome route into List route">
+      <created>1384730059975</created>
+      <updated>1384730059975</updated>
+    </task>
+    <task id="LOCAL-00034" summary="fixes CreateCtrl to properly go to the nested show route">
+      <created>1384730119518</created>
+      <updated>1384730119518</updated>
+    </task>
+    <task id="LOCAL-00035" summary="renames the confId parameter into callId">
+      <created>1384730169304</created>
+      <updated>1384730169304</updated>
+    </task>
+    <task id="LOCAL-00036" summary="updates README">
+      <created>1384730214821</created>
+      <updated>1384730214821</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fixes a typo">
+      <created>1384781550356</created>
+      <updated>1384781550356</updated>
+    </task>
+    <task id="LOCAL-00038" summary="upgrades the version of angular">
+      <created>1384875897653</created>
+      <updated>1384875897653</updated>
+    </task>
+    <task id="LOCAL-00039" summary="replaces map configs with annotations">
+      <created>1384875915022</created>
+      <updated>1384875915022</updated>
+    </task>
+    <task id="LOCAL-00040" summary="removes unnecessary ng-bind-route">
+      <created>1384884680830</created>
+      <updated>1384884680830</updated>
+    </task>
+    <task id="LOCAL-00041" summary="uses RouteProvider instead of Router">
+      <created>1384884911293</created>
+      <updated>1384884911293</updated>
+    </task>
+    <task id="LOCAL-00042" summary="lots of style changes">
+      <created>1385131951172</created>
+      <updated>1385131951172</updated>
+    </task>
+    <task id="LOCAL-00043" summary="adds styling for the status indicator">
+      <created>1385133647534</created>
+      <updated>1385133647534</updated>
+    </task>
+    <task id="LOCAL-00044" summary="highlights selected item">
+      <created>1385135814399</created>
+      <updated>1385135814399</updated>
+    </task>
+    <task id="LOCAL-00045" summary="shows an empty message when no calls are selected">
+      <created>1385136456127</created>
+      <updated>1385136456128</updated>
+    </task>
+    <task id="LOCAL-00046" summary="adds styling for the &quot;no call selected&quot; message">
+      <created>1385136470604</created>
+      <updated>1385136470604</updated>
+    </task>
+    <task id="LOCAL-00047" summary="order calls by name">
+      <created>1385137547094</created>
+      <updated>1385137547095</updated>
+    </task>
+    <task id="LOCAL-00048" summary="fixes agenda item update">
+      <created>1385138132185</created>
+      <updated>1385138132185</updated>
+    </task>
+    <task id="LOCAL-00049" summary="orders all items by priority and done">
+      <created>1385138146697</created>
+      <updated>1385138146697</updated>
+    </task>
+    <task id="LOCAL-00050" summary="updates README">
+      <created>1385138451927</created>
+      <updated>1385138451927</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Removes the Description word from auto preview">
+      <created>1385149078133</created>
+      <updated>1385149078133</updated>
+    </task>
+    <task id="LOCAL-00052" summary="adds a picture of a cat">
+      <created>1385149101752</created>
+      <updated>1385149101752</updated>
+    </task>
+    <task id="LOCAL-00053" summary="refactors the toggle component to be more generic">
+      <created>1385149159286</created>
+      <updated>1385149159286</updated>
+    </task>
+    <task id="LOCAL-00054" summary="adds the call component">
+      <created>1385149396770</created>
+      <updated>1385149396770</updated>
+    </task>
+    <task id="LOCAL-00055" summary="adds a call component to the show view">
+      <created>1385149420124</created>
+      <updated>1385149420124</updated>
+    </task>
+    <task id="LOCAL-00056" summary="merges call component and call controller">
+      <created>1385149522832</created>
+      <updated>1385149522833</updated>
+    </task>
+    <task id="LOCAL-00057" summary="styling changes">
+      <created>1385149534894</created>
+      <updated>1385149534894</updated>
+    </task>
+    <task id="LOCAL-00058" summary="registers call component in the app">
+      <created>1385149545972</created>
+      <updated>1385149545973</updated>
+    </task>
+    <task id="LOCAL-00059" summary="minor template changes">
+      <created>1385149957677</created>
+      <updated>1385149957677</updated>
+    </task>
+    <task id="LOCAL-00060" summary="changes the description">
+      <created>1385246648890</created>
+      <updated>1385246648891</updated>
+    </task>
+    <task id="LOCAL-00061" summary="deletes an unused css file">
+      <created>1385246664658</created>
+      <updated>1385246664659</updated>
+    </task>
+    <task id="LOCAL-00062" summary="moves all services into the services folder">
+      <created>1385246689717</created>
+      <updated>1385246689718</updated>
+    </task>
+    <task id="LOCAL-00063" summary="moves AgendaItemComponent into a separate file">
+      <created>1385246726101</created>
+      <updated>1385246726101</updated>
+    </task>
+    <task id="LOCAL-00064" summary="fixes part declarations">
+      <created>1385246771979</created>
+      <updated>1385246771979</updated>
+    </task>
+    <task id="LOCAL-00065" summary="moves all script tags to body">
+      <created>1385246793963</created>
+      <updated>1385246793963</updated>
+    </task>
+    <task id="LOCAL-00066" summary="renames route initializer">
+      <created>1385246867977</created>
+      <updated>1385246867977</updated>
+    </task>
+    <task id="LOCAL-00067" summary="updates README">
+      <created>1385246925864</created>
+      <updated>1385246925864</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="49" y="22" width="1391" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32849604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67150396" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39973614" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32849604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39973614" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67150396" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="lots of style changes" />
+    <MESSAGE value="adds styling for the status indicator" />
+    <MESSAGE value="highlights selected item" />
+    <MESSAGE value="shows an empty message when no calls are selected" />
+    <MESSAGE value="adds styling for the &quot;no call selected&quot; message" />
+    <MESSAGE value="order calls by name" />
+    <MESSAGE value="fixes agenda item update" />
+    <MESSAGE value="orders all items by priority and done" />
+    <MESSAGE value="Removes the Description word from auto preview" />
+    <MESSAGE value="adds a picture of a cat" />
+    <MESSAGE value="refactors the toggle component to be more generic" />
+    <MESSAGE value="adds the call component" />
+    <MESSAGE value="adds a call component to the show view" />
+    <MESSAGE value="merges call component and call controller" />
+    <MESSAGE value="styling changes" />
+    <MESSAGE value="registers call component in the app" />
+    <MESSAGE value="minor template changes" />
+    <MESSAGE value="changes the description" />
+    <MESSAGE value="deletes an unused css file" />
+    <MESSAGE value="moves all services into the services folder" />
+    <MESSAGE value="moves AgendaItemComponent into a separate file" />
+    <MESSAGE value="fixes part declarations" />
+    <MESSAGE value="moves all script tags to body" />
+    <MESSAGE value="renames route initializer" />
+    <MESSAGE value="updates README" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates README" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/packages/angular/core_dom/ng_mustache.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="638" selection-end="638" vertical-scroll-proportion="0.41917807" vertical-offset="0" max-vertical-offset="730">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/angular/core/registry.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/angular/core/interpolate.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="18" selection-start="141" selection-end="141" vertical-scroll-proportion="0.11643836" vertical-offset="0" max-vertical-offset="1717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/angular/core_dom/block_factory.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="266" column="45" selection-start="10247" selection-end="10247" vertical-scroll-proportion="0.7002882" vertical-offset="4036" max-vertical-offset="6630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/angular/core/zone.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2788">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/angular/directive/ng_model.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="31" selection-start="436" selection-end="446" vertical-scroll-proportion="0.14644352" vertical-offset="31" max-vertical-offset="5882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tools/dart/dart-sdk/lib/io/directory.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="176" column="25" selection-start="6519" selection-end="6519" vertical-scroll-proportion="0.5575342" vertical-offset="2585" max-vertical-offset="3315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tools/dart/dart-sdk/lib/io/file_system_entity.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="162" column="15" selection-start="6039" selection-end="6039" vertical-scroll-proportion="-1.1584158" vertical-offset="3573" max-vertical-offset="12869">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tools/dart/dart-sdk/lib/io/file.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="9" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.3561644" vertical-offset="539" max-vertical-offset="9180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tools/dart/dart-sdk/lib/io/process.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="159" column="32" selection-start="6066" selection-end="6066" vertical-scroll-proportion="0.0" vertical-offset="2460" max-vertical-offset="5661">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/angular/core_dom/http.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="0" selection-start="2788" selection-end="2828" vertical-scroll-proportion="0.0" vertical-offset="1032" max-vertical-offset="13515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/angular/directive/ng_include.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="29" selection-start="745" selection-end="745" vertical-scroll-proportion="0.41917807" vertical-offset="0" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/angular/core_dom/directive.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/route_hierarchical/client.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="660" column="18" selection-start="20246" selection-end="20246" vertical-scroll-proportion="0.0" vertical-offset="10762" max-vertical-offset="11492">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/source_maps/span.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="15" selection-start="2577" selection-end="2577" vertical-scroll-proportion="0.33239037" vertical-offset="1057" max-vertical-offset="6222">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/angular/mock/http_backend.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="11" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="11067">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/list_ctrl.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="30" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/angular/filter/order_by.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="60" selection-start="1973" selection-end="1991" vertical-scroll-proportion="0.0" vertical-offset="1139" max-vertical-offset="3162">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/components/agenda_item_input.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="29" selection-start="170" selection-end="170" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/components/agenda_item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="46" selection-start="562" selection-end="562" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/talk-to-me.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="0" selection-start="1731" selection-end="1731" vertical-scroll-proportion="0.0" vertical-offset="1055" max-vertical-offset="1853">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/components/toggle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="30" selection-start="128" selection-end="128" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/components/call.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="15" selection-start="643" selection-end="643" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/create_call_ctrl.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="47" selection-start="329" selection-end="329" vertical-scroll-proportion="0.34931508" vertical-offset="0" max-vertical-offset="730">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="4" selection-start="371" selection-end="390" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/angular/routing/ng_view.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="6" selection-start="1857" selection-end="1857" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="61" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/services/parse_agenda_item.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="27" selection-end="27" vertical-scroll-proportion="0.04657534" vertical-offset="0" max-vertical-offset="730">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/services/call_storage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="17" selection-start="43" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/services/call_serializer.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/angular/routing/routing.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0" vertical-offset="131" max-vertical-offset="1921">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/angular/routing/module.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="48" selection-start="912" selection-end="912" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="3434">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/di/module.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="7" selection-start="2028" selection-end="2028" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="2329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/components/agenda_item_input_component.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="7" selection-start="651" selection-end="651" vertical-scroll-proportion="0.5589041" vertical-offset="0" max-vertical-offset="730">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/components/call_component.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="1" selection-start="384" selection-end="384" vertical-scroll-proportion="0.37260273" vertical-offset="0" max-vertical-offset="730">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/angular/bootstrap.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="9" selection-start="1812" selection-end="1812" vertical-scroll-proportion="0.0" vertical-offset="369" max-vertical-offset="1734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="66" selection-start="346" selection-end="346" vertical-scroll-proportion="0.31982633" vertical-offset="0" max-vertical-offset="691">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="25" selection-start="535" selection-end="554" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/show_call_ctrl.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="4" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="24" selection-end="28" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/angular/core/directive.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="3" selection-start="6962" selection-end="6962" vertical-scroll-proportion="-17.56" vertical-offset="2621" max-vertical-offset="8211">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/components/agenda_item_component.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="15" selection-start="284" selection-end="284" vertical-scroll-proportion="0.30273974" vertical-offset="0" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/components/agenda_component.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="11" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/models/agenda_item.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="265" selection-end="265" vertical-scroll-proportion="0.30273974" vertical-offset="0" max-vertical-offset="730">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/models/call.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.20958903" vertical-offset="0" max-vertical-offset="730">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/components/agenda.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="433" selection-end="433" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/talk_to_me.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="50" selection-start="1183" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/talk_to_me_route_initializer.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="1" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/components/toggle_component.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="21" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="6" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0" vertical-offset="433" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="458">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

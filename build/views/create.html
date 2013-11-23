@@ -1,0 +1,21 @@
+<div class="col-md-4">
+  <h2>Create a Call</h2>
+</div>
+
+<div class="col-md-8" create-call-ctrl>
+  <form onsubmit="return false;">
+
+    <div class="row">
+      <h3>Name</h3>
+      <input class="form-control" type="text" ng-model="ctrl.call.name">
+    </div>
+
+    <div class="row">
+      <agenda model="ctrl.call.agenda" checkable="false"></agenda>
+    </div>
+
+    <div class="row create-row">
+      <button class="btn btn-primary btn-block" type="submit" ng-click="ctrl.create()" ng-disabled="!ctrl.call.valid">Create</button>
+    </div>
+  </form>
+</div>
