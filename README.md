@@ -2,11 +2,7 @@
 
 ## Overview
 
-It is a server-less Web application built using `AngularDart` and `WebRTC` where you can:
-
-* Make a video call
-* Create an agenda for the call
-* Collaborate during the call
+It is a sample Web application built using `AngularDart` where you can.
 
 ## Dart and AngularDart
 
