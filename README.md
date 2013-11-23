@@ -25,6 +25,10 @@ The project is still very much a work in progress.
 * Controllers, Components
 * Routing
 
+## Try It
+
+[http://vsavkin.github.io/angulardart-sample-app/app.html](http://vsavkin.github.io/angulardart-sample-app/app.html)
+
 ## To do
 
 * Transclusion
