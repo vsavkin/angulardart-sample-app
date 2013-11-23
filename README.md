@@ -1,9 +1,5 @@
 # Talk to Me
 
-## Overview
-
-It is a sample Web application built using `AngularDart` where you can.
-
 ## Dart and AngularDart
 
 `Dart` is a new platform for Web development that includes a language, tools, and libraries. `AngularDart` is a framework that enables building rich client-side applications. 
