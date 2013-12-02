@@ -13,13 +13,17 @@ part 'services/call_serializer.dart';
 part 'services/call_storage.dart';
 part 'services/users_repository.dart';
 part 'services/parse_agenda_item.dart';
+part 'services/messages.dart';
+
 part 'talk_to_me_route_initializer.dart';
+part 'global_http_interceptors.dart';
 
 part 'components/toggle_component.dart';
 part 'components/call_component.dart';
 part 'components/agenda_component.dart';
 part 'components/agenda_item_component.dart';
 part 'components/agenda_item_input_component.dart';
+part 'components/global_alert_component.dart';
 part 'models/call.dart';
 part 'models/agenda_item.dart';
 part 'models/user.dart';
@@ -44,6 +48,9 @@ class TalkToMeApp extends Module {
     type(CallStorage);
     type(UsersRepository);
 
+    type(Messages);
+    type(GlobalAlertComponent);
+
     type(RouteInitializer, implementedBy: TalkToMeRouteInitializer);
     factory(NgRoutingUsePushState, (_) => new NgRoutingUsePushState.value(false));
   }
@@ -53,5 +60,6 @@ main(){
   Logger.root.level = Level.FINEST;
   Logger.root.onRecord.listen((LogRecord r) { print(r.message); });
 
-  ngBootstrap(module: new TalkToMeApp());
+  Injector inj = ngBootstrap(module: new TalkToMeApp());
+  GlobalHttpInterceptors.setup(inj);
 }
