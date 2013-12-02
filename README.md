@@ -25,6 +25,12 @@ The project is still very much a work in progress.
 
 [http://vsavkin.github.io/angulardart-sample-app/app.html](http://vsavkin.github.io/angulardart-sample-app/app.html)
 
+## Problems
+
+If you have any data in your local storage the application may not work as expected. To fix it run the following command in the browser console:
+
+`window.localStorage.clear()`
+
 ## To do
 
 * Transclusion
