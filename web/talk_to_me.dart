@@ -22,6 +22,7 @@ part 'components/agenda_item_component.dart';
 part 'components/agenda_item_input_component.dart';
 part 'models/call.dart';
 part 'models/agenda_item.dart';
+part 'models/user.dart';
 part 'views/list_ctrl.dart';
 part 'views/create_call_ctrl.dart';
 part 'views/show_call_ctrl.dart';
