@@ -1,5 +1,5 @@
 [
-  {"name": "Jim"},
-  {"name": "Bob"},
-  {"name": "Ruby"}
+  {"name": "Jim", "isOnline" : false},
+  {"name": "Bob", "isOnline" : false},
+  {"name": "Ruby", "isOnline" : true}
 ]
