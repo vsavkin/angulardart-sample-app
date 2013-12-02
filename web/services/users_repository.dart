@@ -5,5 +5,11 @@ class UsersRepository {
 
   UsersRepository(this.http);
 
-  List all(){return null;}
+  Future<List<User>> all() =>
+    http.
+    get("/easyconf/web/api/users.json", interceptors: new DefaultTransformDataHttpInterceptor()).
+    then((_) => _.data).
+    then((_) => _.map(_parseUser).toList());
+
+  _parseUser(map) => new User(map["name"], map["isOnline"]);
 }
