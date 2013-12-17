@@ -20,6 +20,9 @@ The project is still very much a work in progress.
 
 * Controllers, Components
 * Routing
+* HTTP
+* Configuring injectables
+* Using scopes for message passing
 
 ## Try It
 
@@ -39,8 +42,6 @@ If you have any data in your local storage the application may not work as expec
 * Application state management
 * Shadow DOM
 * Use factory, value, CreationStrategy, and Visibility
-* Configuring injectables
-* HTTP
 
 ## Index
 
@@ -52,3 +53,6 @@ If you have any data in your local storage the application may not work as expec
 * Using filters => `agenda.html` and `list.html`
 * Registering components, controllers, and other injectables => talk_to_me.dart
 * Creating services => `parse_agenda_item.dart`, `storage.dart`
+* Using the Http service => `users_repository.dart`
+* Configuring injectables => `global_http_interceptors.dart`
+* Using scopes for message passing => `messages.dart` and `global_alert_component.dart`

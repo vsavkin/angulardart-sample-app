@@ -1,9 +1,15 @@
 <div class="row call-row">
-  <toggle toggle-property="open">
+  <toggle toggle-property="ctrl.open">
     <when-closed>
-      <button class="btn btn-default" ng-click="open = true">
-        <span class="glyphicon glyphicon-earphone"></span> Call
-      </button>
+      <div ng-if="ctrl.isOnline">
+        <button class="btn btn-default" ng-click="ctrl.open = true">
+          <span class="glyphicon glyphicon-earphone"></span> Call
+        </button>
+      </div>
+
+      <div ng-if="!ctrl.isOnline">
+        {{ctrl.model.name}} is Offline
+      </div>
     </when-closed>
 
     <when-open>
@@ -11,7 +17,7 @@
       <span class="glyphicon glyphicon-transfer video-box-transfer"></span>
       <img src="images/cat.jpg" class="video-box">
 
-      <button class="btn btn-default" ng-click="open = false">
+      <button class="btn btn-default" ng-click="ctrl.open = false">
         <span class="glyphicon glyphicon-phone-alt"></span> Hang up
       </button>
     </when-open>

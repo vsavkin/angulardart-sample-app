@@ -9,6 +9,14 @@ part of talk_to_me;
 class CallComponent implements NgAttachAware {
   Object videoSrc;
 
+  @NgOneWay("is-online")
+  bool isOnline;
+
+  @NgOneWay("model")
+  Call model;
+
+  bool open = false;
+
   attach(){
     html.window.navigator.getUserMedia(video:true, audio: true).then((localStream) {
       videoSrc = html.Url.createObjectUrl(localStream);
