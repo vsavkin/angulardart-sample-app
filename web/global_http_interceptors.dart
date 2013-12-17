@@ -1,7 +1,7 @@
 part of talk_to_me;
 
 class GlobalHttpInterceptors {
-  static setup(Injector inj) =>
+  static setUp(Injector inj) =>
     new GlobalHttpInterceptors(inj)..addGlobalAlertInterceptor();
 
   Injector inj;

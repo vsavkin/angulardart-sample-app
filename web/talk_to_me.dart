@@ -61,5 +61,5 @@ main(){
   Logger.root.onRecord.listen((LogRecord r) { print(r.message); });
 
   Injector inj = ngBootstrap(module: new TalkToMeApp());
-  GlobalHttpInterceptors.setup(inj);
+  GlobalHttpInterceptors.setUp(inj);
 }
