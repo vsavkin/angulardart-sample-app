@@ -6,5 +6,6 @@ dependencies:
   uuid: ">=0.1.6 <=1.0.0"
 dev_dependencies:
   unittest: ">= 0.8.10 <2.0.0"
+  dartmocks: ">= 0.5.0"
 environment:
   sdk: ">=0.8.10 <2.0.0"
