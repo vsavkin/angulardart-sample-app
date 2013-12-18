@@ -8,7 +8,7 @@ packages:
   angular:
     description: angular
     source: hosted
-    version: "0.9.1"
+    version: "0.9.3"
   args:
     description: args
     source: hosted
@@ -53,10 +53,6 @@ packages:
     description: logging
     source: hosted
     version: "0.9.0"
-  meta:
-    description: meta
-    source: hosted
-    version: "0.8.8"
   path:
     description: path
     source: hosted
