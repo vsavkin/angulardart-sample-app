@@ -8,8 +8,14 @@ class TestResponse {
   static async(data) => new Future.value(new TestResponse(data));
 }
 
+waitForHttp(future, callback) =>
+  Timer.run(expectAsync0(() {
+    inject((MockHttpBackend http) => http.flush());
+    future.then(callback);
+  }));
+
 testUsersRepository(){
-  group("[UsersRepository]", (){
+  group("[UsersRepository - without using Angular helpers]", (){
     group("[all]", (){
       test("getting a list of users", (){
         final http = new TestHttp()
@@ -25,5 +31,25 @@ testUsersRepository(){
         });
       });
     });
-  });;
+  });
+
+  group("[UsersRepository - with using Angular helpers]", () {
+    setUp(setUpInjector);
+    tearDown(tearDownInjector);
+
+    group("[all]", () {
+      setUp(module((Module _) => _
+        ..type(MockHttpBackend)
+        ..type(UsersRepository)));
+
+      test("getting a list of users", inject((MockHttpBackend http, UsersRepository repo) {
+        http.whenGET("/api/users.json").respond('[{"name":"Jerry", "isOnline":true}]');
+
+        waitForHttp(repo.all(), (users){
+          expect(users[0].name, equals("Jerry"));
+          expect(users[0].isOnline, isTrue);
+        });
+      }));
+    });
+  });
 }

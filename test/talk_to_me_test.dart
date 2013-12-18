@@ -7,6 +7,7 @@ import 'dart:async';
 import '../web/talk_to_me.dart';
 import 'package:angular/angular.dart';
 import 'package:angular/routing/module.dart';
+import 'package:angular/mock/module.dart';
 
 part 'unit/parse_agenda_item_test.dart';
 part 'unit/agenda_item_test.dart';
