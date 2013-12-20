@@ -5,6 +5,7 @@ module.exports = function(config) {
     files: [
       'test/*.dart',
       {pattern: '**/*.dart', watched: true, included: false, served: true},
+      {pattern: '**/*.html', served: true, included: false},
       'packages/browser/dart.js',
       'packages/browser/interop.js'
     ],
