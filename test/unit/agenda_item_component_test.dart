@@ -29,7 +29,7 @@ testAgendaItemComponent(){;
     setUp(setUpInjector);
     tearDown(tearDownInjector);
 
-    solo_group("[swiching between modes]", () {
+    group("[swiching between modes]", () {
       html() => '<agenda-item item="item" agenda="agenda"></agenda-item>';
       scope() => {"item" : new AgendaItem("description", true, 1), "agenda" : new AgendaComponent()};
 
