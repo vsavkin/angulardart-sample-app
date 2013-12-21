@@ -2,7 +2,13 @@ name: talk_to_me
 description: A sample web application built using AngularDart
 dependencies:
   browser: ">=0.8.10"
-  angular: ">=0.9.3 <2.0.0"
+
+  # temporary using the git repo until https://github.com/angular/angular.dart/issues/224 is fixed
+  angular:
+    git:
+      url: git@github.com:vsavkin/angular.dart.git
+      ref: fix_http_backend
+
   uuid: ">=0.1.6 <=1.0.0"
 dev_dependencies:
   unittest: ">= 0.8.10 <2.0.0"
