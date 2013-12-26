@@ -1,4 +1,9 @@
-part of talk_to_me;
+library talk_to_me.http_interceptors;
+
+import 'dart:async';
+import 'package:angular/angular.dart';
+
+import 'services/services.dart';
 
 class GlobalHttpInterceptors {
   static setUp(Injector inj) =>

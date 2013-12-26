@@ -4,12 +4,12 @@ packages:
   analyzer:
     description: analyzer
     source: hosted
-    version: "0.10.2"
+    version: "0.10.5"
   angular:
     description:
       ref: fix_http_backend
       resolved-ref: "878c69629233dec160a6c61bf95f5adba536066d"
-      url: "git@github.com:vsavkin/angular.dart.git"
+      url: "https://github.com/vsavkin/angular.dart.git"
     source: git
     version: "0.9.3"
   args:
@@ -24,6 +24,14 @@ packages:
     description: cipher
     source: hosted
     version: "0.4.0"
+  collection:
+    description: collection
+    source: hosted
+    version: "0.9.0"
+  collection_helpers:
+    description: collection_helpers
+    source: hosted
+    version: "0.9.2"
   crypto:
     description: crypto
     source: hosted
@@ -35,7 +43,7 @@ packages:
   di:
     description: di
     source: hosted
-    version: "0.0.27"
+    version: "0.0.29"
   fixnum:
     description: fixnum
     source: hosted
@@ -43,23 +51,23 @@ packages:
   html5lib:
     description: html5lib
     source: hosted
-    version: "0.9.0"
+    version: "0.9.1"
   intl:
     description: intl
     source: hosted
-    version: "0.9.0"
+    version: "0.9.1"
   js:
     description: js
     source: hosted
-    version: "0.2.0"
+    version: "0.2.1"
   logging:
     description: logging
     source: hosted
-    version: "0.9.0"
+    version: "0.9.1"
   path:
     description: path
     source: hosted
-    version: "0.9.0"
+    version: "1.0.0"
   perf_api:
     description: perf_api
     source: hosted
@@ -67,7 +75,7 @@ packages:
   route_hierarchical:
     description: route_hierarchical
     source: hosted
-    version: "0.4.9"
+    version: "0.4.10"
   source_maps:
     description: source_maps
     source: hosted
@@ -75,15 +83,19 @@ packages:
   stack_trace:
     description: stack_trace
     source: hosted
+    version: "0.9.1"
+  typed_data:
+    description: typed_data
+    source: hosted
     version: "0.9.0"
   unittest:
     description: unittest
     source: hosted
-    version: "0.9.0"
+    version: "0.9.2+1"
   unmodifiable_collection:
     description: unmodifiable_collection
     source: hosted
-    version: "0.9.0"
+    version: "0.9.2"
   utf:
     description: utf
     source: hosted

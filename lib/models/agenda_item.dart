@@ -1,4 +1,4 @@
-part of talk_to_me;
+part of talk_to_me.models;
 
 class AgendaItem {
   String description;
@@ -9,5 +9,5 @@ class AgendaItem {
 
   bool get valid => description.isNotEmpty && priority != null;
 
-  bool get extPriority => done ? 4 : priority;
+  num get extPriority => done ? 4 : priority;
 }

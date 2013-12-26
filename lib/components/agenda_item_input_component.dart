@@ -1,8 +1,8 @@
-part of talk_to_me;
+part of talk_to_me.components;
 
 @NgComponent(
     selector: 'agenda-item-input',
-    templateUrl: 'components/agenda_item_input.html',
+    templateUrl: 'packages/talk_to_me/components/agenda_item_input.html',
     publishAs: 'ctrl',
     applyAuthorStyles: true
 )

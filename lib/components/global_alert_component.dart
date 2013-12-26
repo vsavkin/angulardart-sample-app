@@ -1,8 +1,8 @@
-part of talk_to_me;
+part of talk_to_me.components;
 
 @NgComponent(
     selector: 'global-alert',
-    templateUrl: 'components/global_alert.html',
+    templateUrl: 'packages/talk_to_me/components/global_alert.html',
     publishAs: 'ctrl',
     applyAuthorStyles: true
 )
