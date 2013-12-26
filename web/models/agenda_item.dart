@@ -9,5 +9,5 @@ class AgendaItem {
 
   bool get valid => description.isNotEmpty && priority != null;
 
-  bool get extPriority => done ? 4 : priority;
+  num get extPriority => done ? 4 : priority;
 }
