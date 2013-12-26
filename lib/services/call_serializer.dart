@@ -1,4 +1,4 @@
-part of talk_to_me;
+part of talk_to_me.services;
 
 class CallSerializer {
   String serialize(Call call, String id){

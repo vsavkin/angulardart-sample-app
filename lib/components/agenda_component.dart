@@ -1,8 +1,8 @@
-part of talk_to_me;
+part of talk_to_me.components;
 
 @NgComponent(
     selector: 'agenda',
-    templateUrl: 'components/agenda.html',
+    templateUrl: 'lib:components/agenda.html',
     publishAs: 'ctrl',
     applyAuthorStyles: true
 )

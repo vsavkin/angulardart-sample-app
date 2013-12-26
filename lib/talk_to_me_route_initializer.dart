@@ -1,4 +1,6 @@
-part of talk_to_me;
+library talk_to_me.route_initializer;
+
+import 'package:angular/angular.dart';
 
 class TalkToMeRouteInitializer implements RouteInitializer {
   init(Router router, ViewFactory view) {

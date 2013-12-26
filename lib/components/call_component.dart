@@ -1,8 +1,8 @@
-part of talk_to_me;
+part of talk_to_me.components;
 
 @NgComponent(
     selector: 'call',
-    templateUrl: 'components/call.html',
+    templateUrl: 'lib:components/call.html',
     publishAs: 'ctrl',
     applyAuthorStyles: true
 )

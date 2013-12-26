@@ -6,7 +6,7 @@ dependencies:
   # temporary using the git repo until https://github.com/angular/angular.dart/issues/224 is fixed
   angular:
     git:
-      url: git@github.com:vsavkin/angular.dart.git
+      url: https://github.com/vsavkin/angular.dart.git
       ref: fix_http_backend
 
   uuid: ">=0.1.6 <=1.0.0"

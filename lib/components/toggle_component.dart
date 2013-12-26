@@ -1,8 +1,8 @@
-part of talk_to_me;
+part of talk_to_me.components;
 
 @NgComponent(
     selector: 'toggle',
-    templateUrl: 'components/toggle.html',
+    templateUrl: 'lib:components/toggle.html',
     publishAs: 'ctrl'
 )
 class ToggleComponent {
