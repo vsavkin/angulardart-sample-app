@@ -20,7 +20,7 @@ testUsersRepository(){
       test("getting a list of users", (){
         final http = new TestHttp()
           ..stub("get").
-            args("/api/users.json").
+            args("api/users.json").
             andReturn(TestResponse.async([{"name" : "Jerry", "isOnline" : true}]));
 
         final repo = new UsersRepository(http);
@@ -43,7 +43,7 @@ testUsersRepository(){
         ..type(UsersRepository)));
 
       test("getting a list of users", inject((MockHttpBackend http, UsersRepository repo) {
-        http.whenGET("/api/users.json").respond('[{"name":"Jerry", "isOnline":true}]');
+        http.whenGET("api/users.json").respond('[{"name":"Jerry", "isOnline":true}]');
 
         waitForHttp(repo.all(), (users){
           expect(users[0].name, equals("Jerry"));

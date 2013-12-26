@@ -34,7 +34,14 @@ class TalkToMeApp extends Module {
 
     type(RouteInitializer, implementedBy: TalkToMeRouteInitializer);
     factory(NgRoutingUsePushState, (_) => new NgRoutingUsePushState.value(false));
+
+    type(UrlRewriter, implementedBy: TalkToMeUrlRewriter);
   }
+}
+
+class TalkToMeUrlRewriter implements UrlRewriter {
+  String call(url) =>
+      url.startsWith('lib:') ? 'packages/talk_to_me/${url.substring(4)}' : url;
 }
 
 main(){

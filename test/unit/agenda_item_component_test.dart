@@ -4,7 +4,7 @@ loadTemplates(List<String> templates){
   updateCache(template, response) => inject((TemplateCache cache) => cache.put(template, response));
 
   final futures = templates.map((template) =>
-    html.HttpRequest.request("${template}", method: "GET").
+    html.HttpRequest.request('packages/talk_to_me/' + template.substring(4), method: "GET").
     then((_) => updateCache(template, new HttpResponse(200, _.response))));
 
   return Future.wait(futures);
@@ -35,7 +35,7 @@ testAgendaItemComponent(){;
 
       setUp((){
         module((Module _) => _..type(TestBed)..type(AgendaItemComponent));
-        return loadTemplates(['packages/talk_to_me/components/agenda_item.html']);
+        return loadTemplates(['lib:components/agenda_item.html']);
       });
 
       test("defaults to the show mode", (){

@@ -2,7 +2,7 @@ part of talk_to_me.components;
 
 @NgComponent(
     selector: 'call',
-    templateUrl: 'packages/talk_to_me/components/call.html',
+    templateUrl: 'lib:components/call.html',
     publishAs: 'ctrl',
     applyAuthorStyles: true
 )
