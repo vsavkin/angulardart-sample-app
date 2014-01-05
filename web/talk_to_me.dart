@@ -4,20 +4,6 @@ import 'dart:html' as html;
 import 'dart:convert';
 import 'dart:async';
 
-@MirrorsUsed(targets: const[
-    'talk_to_me',
-    'angular',
-    'angular.core',
-    'angular.core.dom',
-    'angular.filter',
-    'angular.perf',
-    'angular.directive',
-    'angular.routing',
-    'angular.core.parser',
-    'perf_api',
-    html.NodeTreeSanitizer
-],
-override: '*')
 import 'dart:mirrors';
 
 import 'package:angular/angular.dart';
