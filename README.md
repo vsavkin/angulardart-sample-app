@@ -8,9 +8,10 @@
 
 The goal of this project is to be a sample application that can help you get started with `AngularDart`. I began working on it a few days ago to learn the framework. And since there is not much documentation about `AngularDart`, I decided to make it public, so others can benefit from it.
  
-## AngularDart Tutorial Wiki
+## Learn About AngularDart
 
-I found [AngularDart wiki](https://github.com/angular/angular.dart.tutorial/wiki) being extremely useful. Check it out.
+* [AngularDart for AngularJS Developers. Introduction to the best Angular yet.](http://victorsavkin.com/post/72452331552/angulardart-for-angularjs-developers-introduction-to)
+* I found [AngularDart wiki](https://github.com/angular/angular.dart.tutorial/wiki) being extremely useful. Check it out.
 
 ## Work in Progress
 
