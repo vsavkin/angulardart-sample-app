@@ -15,7 +15,7 @@ compileComponent(String html, Map scope, callback){
     final s = tb.rootScope.$new();
     scope.forEach((k,v) => s[k] = v);
 
-    final el = tb.compile(html);
+    final el = tb.compile(html, scope: s);
 
     Timer.run(expectAsync0(() {
       tb.rootScope.$digest();
