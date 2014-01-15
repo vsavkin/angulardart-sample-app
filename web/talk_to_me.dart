@@ -14,6 +14,8 @@ import 'dart:async';
     'angular.directive',
     'angular.routing',
     'angular.core.parser',
+    'angular.core.parser.dynamic_parser',
+    'angular.core.parser.lexer',
     'perf_api',
     html.NodeTreeSanitizer
 ],
