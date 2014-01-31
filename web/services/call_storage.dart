@@ -5,7 +5,7 @@ class CallStorage {
 
   CallStorage(this.serializer);
 
-  List get all => _s.keys.map(_fetch);
+  List get all => _s.keys.map(_fetch).toList();
 
   String store(Call call){
     var id = _getId(call);

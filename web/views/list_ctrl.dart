@@ -15,5 +15,5 @@ class ListCtrl {
   bool isSelected(Call call) => _callId == call.id;
   bool get isAnySelected => _callId != null;
 
-  bool get _callId => router.activePath.last.parameters["callId"];
+  String get _callId => router.activePath.last.parameters["callId"];
 }
