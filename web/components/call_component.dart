@@ -17,9 +17,10 @@ class CallComponent implements NgAttachAware {
 
   bool open = false;
 
-  attach(){
-    html.window.navigator.getUserMedia(video:true, audio: true).then((localStream) {
-      videoSrc = html.Url.createObjectUrl(localStream);
-    });
+  Future attach() {
+    return html.window.navigator.getUserMedia(video:true, audio: true)
+        .then((localStream) {
+          videoSrc = html.Url.createObjectUrl(localStream);
+        });
   }
 }

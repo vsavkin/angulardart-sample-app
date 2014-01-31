@@ -11,5 +11,5 @@ class UsersRepository {
     then((_) => _.data).
     then((_) => _.map(_parseUser).toList());
 
-  _parseUser(map) => new User(map["name"], map["isOnline"]);
+  User _parseUser(map) => new User(map["name"], map["isOnline"]);
 }
