@@ -8,10 +8,10 @@ packages:
   angular:
     description:
       ref: null
-      resolved-ref: "73b0dca8dd82012a3396213bf7addf4143bba704"
+      resolved-ref: ff736d92a16bc06b848d0be4282dbf8f80b831c5
       url: "https://github.com/angular/angular.dart"
     source: git
-    version: "0.9.4"
+    version: "0.9.5"
   args:
     description: args
     source: hosted
@@ -68,6 +68,10 @@ packages:
     description: route_hierarchical
     source: hosted
     version: "0.4.10"
+  shadow_dom:
+    description: shadow_dom
+    source: hosted
+    version: "0.9.1"
   source_maps:
     description: source_maps
     source: hosted
