@@ -14,18 +14,18 @@ class AgendaComponent {
   @NgOneWay("model")
   List<AgendaItem> model;
 
-  AgendaComponent(){
+  AgendaComponent() {
     newAgendaItem = new AgendaItem("", false, 3);
   }
 
-  addItem(){
+  void addItem() {
     model.add(newAgendaItem);
     newAgendaItem = new AgendaItem("", false, 3);
   }
 
-  deleteItem(AgendaItem item){
+  void deleteItem(AgendaItem item) {
     model.remove(item);
   }
 
-  get valid => newAgendaItem.valid;
+  bool get valid => newAgendaItem.valid;
 }
