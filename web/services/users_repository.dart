@@ -7,7 +7,7 @@ class UsersRepository {
 
   Future<List<User>> all() =>
     http.
-    get("/api/users.json").
+    get("api/users.json").
     then((_) => _.data).
     then((_) => _.map(_parseUser).toList());
 

@@ -5,10 +5,12 @@ class CallStorage {
 
   CallStorage(this.serializer);
 
-  List get all => _s.keys.map(_fetch).toList();
+  List get all => _s.keys
+      .where((k) => k.startsWith('talk-to-me:'))
+      .map(_fetch).toList();
 
   String store(Call call){
-    var id = _getId(call);
+    var id = 'talk-to-me:${_getId(call)}';
     _s[id] = serializer.serialize(call, id);
     return id;
   }
