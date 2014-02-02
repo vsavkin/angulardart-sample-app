@@ -1,2 +1,4 @@
 .idea
 packages
+pubspec.lock
+.DS_Store
