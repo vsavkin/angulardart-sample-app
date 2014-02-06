@@ -2,7 +2,7 @@ name: talk_to_me
 description: A sample web application built using AngularDart
 dependencies:
   browser: ">=0.8.10"
-  angular: ">= 0.9.6"
+  angular: ">= 0.9.5 < 0.9.6"
   uuid: ">=0.1.6 <=1.0.0"
 dev_dependencies:
   unittest: ">= 0.8.10 <2.0.0"
