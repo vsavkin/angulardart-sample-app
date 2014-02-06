@@ -5,19 +5,7 @@ import 'dart:convert';
 import 'dart:async';
 
 @MirrorsUsed(targets: const[
-    'talk_to_me',
-    'angular',
-    'angular.core',
-    'angular.core.dom',
-    'angular.filter',
-    'angular.perf',
-    'angular.directive',
-    'angular.routing',
-    'angular.core.parser',
-    'angular.core.parser.dynamic_parser',
-    'angular.core.parser.lexer',
-    'perf_api',
-    html.NodeTreeSanitizer
+    'talk_to_me'
 ],
 override: '*')
 import 'dart:mirrors';
