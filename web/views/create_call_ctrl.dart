@@ -11,7 +11,7 @@ class CreateCallCtrl {
 
   CreateCallCtrl(this.storage, this.router);
 
-  create(){
+  void create() {
     var callId = storage.store(call);
     router.go("list.show", {"callId": callId});
   }

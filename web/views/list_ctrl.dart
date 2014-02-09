@@ -8,12 +8,12 @@ class ListCtrl {
   List<Call> calls;
   Router router;
 
-  ListCtrl(CallStorage storage, this.router){
+  ListCtrl(CallStorage storage, this.router) {
     calls = storage.all;
   }
 
-  isSelected(Call call) => _callId == call.id;
-  get isAnySelected => _callId != null;
+  bool isSelected(Call call) => _callId == call.id;
+  bool get isAnySelected => _callId != null;
 
-  get _callId => router.activePath.last.parameters["callId"];
+  String get _callId => router.activePath.last.parameters["callId"];
 }

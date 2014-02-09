@@ -10,7 +10,7 @@ class ParseAgendaItem {
       _parseDescription(description, matches.first);
   }
 
-  _parseDescription(description, match){
+  AgendaItem _parseDescription(description, match){
     var before = description.substring(0, match.start).trim();
     var after = description.substring(match.end).trim();
 

@@ -5,9 +5,11 @@ class CallStorage {
 
   CallStorage(this.serializer);
 
-  get all => _s.keys.fold([], (res, curr) => res..add(_fetch(curr)));
+  List get all => _s.keys
+      .where((k) => k.startsWith('talk-to-me:'))
+      .map(_fetch).toList();
 
-  store(Call call){
+  String store(Call call){
     var id = _getId(call);
     _s[id] = serializer.serialize(call, id);
     return id;
@@ -15,7 +17,9 @@ class CallStorage {
 
   find(String id) => _s.containsKey(id) ? _fetch(id) : null;
 
-  _getId(call) => call.id != null ? call.id  : new Uuid().v4();
+  String _getId(call) => call.id != null ? call.id  : 'talk-to-me:${new Uuid().v4()}';
+
   _fetch(id) => serializer.deserialize(_s[id]);
-  get _s => html.window.localStorage;
+
+  html.Storage get _s => html.window.localStorage;
 }
