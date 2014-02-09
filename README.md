@@ -11,7 +11,7 @@ The goal of this project is to be a sample application that can help you get sta
 ## Learn About AngularDart
 
 * [AngularDart for AngularJS Developers. Introduction to the best Angular yet.](http://victorsavkin.com/post/72452331552/angulardart-for-angularjs-developers-introduction-to)
-* I found [AngularDart wiki](https://github.com/angular/angular.dart.tutorial/wiki) being extremely useful. Check it out.
+* I found [AngularDart tutorial](https://angulardart.org/tutorial) extremely useful. Check it out.
 
 ## Work in Progress
 
