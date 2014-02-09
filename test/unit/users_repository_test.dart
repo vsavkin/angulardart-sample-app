@@ -1,6 +1,5 @@
 part of talk_to_me_test;
 
-class TestHttp extends TestDouble implements Http{}
 class TestResponse {
   final data;
   TestResponse(this.data);
@@ -18,7 +17,7 @@ testUsersRepository(){
   group("[UsersRepository - without using Angular helpers]", (){
     group("[all]", (){
       test("getting a list of users", (){
-        final http = new TestHttp()
+        final http = new TestDouble()
           ..stub("get").
             args("api/users.json").
             andReturn(TestResponse.async([{"name" : "Jerry", "isOnline" : true}]));

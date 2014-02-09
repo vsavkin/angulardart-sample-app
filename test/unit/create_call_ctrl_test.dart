@@ -1,16 +1,13 @@
 part of talk_to_me_test;
 
-class TestStorage extends TestDouble implements CallStorage{}
-class TestRouter extends TestDouble implements Router{}
-
 testCreateCallCtrl(){
   group("[CreateCallCtrl]", (){
     group("[create]", (){
       var storage, router;
 
       setUp((){
-        storage = new TestStorage();
-        router = new TestRouter();
+        storage = new TestDouble();
+        router = new TestDouble();
 
         storage.stub("store").andReturn("ID");
         router.stub("go");
