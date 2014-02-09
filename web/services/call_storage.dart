@@ -10,14 +10,16 @@ class CallStorage {
       .map(_fetch).toList();
 
   String store(Call call){
-    var id = 'talk-to-me:${_getId(call)}';
+    var id = _getId(call);
     _s[id] = serializer.serialize(call, id);
     return id;
   }
 
   find(String id) => _s.containsKey(id) ? _fetch(id) : null;
 
-  String _getId(call) => call.id != null ? call.id  : new Uuid().v4();
+  String _getId(call) => call.id != null ? call.id  : 'talk-to-me:${new Uuid().v4()}';
+
   _fetch(id) => serializer.deserialize(_s[id]);
+
   html.Storage get _s => html.window.localStorage;
 }
