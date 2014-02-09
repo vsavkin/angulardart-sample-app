@@ -2,7 +2,7 @@ part of talk_to_me;
 
 @NgComponent(
     selector: 'global-alert',
-    templateUrl: 'components/global_alert.html',
+    templateUrl: 'lib:components/global_alert.html',
     publishAs: 'ctrl',
     applyAuthorStyles: true
 )

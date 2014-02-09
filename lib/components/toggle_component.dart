@@ -2,7 +2,7 @@ part of talk_to_me;
 
 @NgComponent(
     selector: 'toggle',
-    templateUrl: 'components/toggle.html',
+    templateUrl: 'lib:components/toggle.html',
     publishAs: 'ctrl'
 )
 class ToggleComponent {
