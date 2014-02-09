@@ -16,26 +16,30 @@ class AgendaItemComponent {
   String mode = "show";
   AgendaItem editItem;
 
-  get isShow => mode == "show";
-  get isEdit => mode == "edit";
+  bool get isShow => mode == "show";
+  bool get isEdit => mode == "edit";
 
-  switchToEdit(){
+  switchToEdit() {
     editItem = item;
     mode = "edit";
   }
 
-  save(){
+  void save() {
     item.description = editItem.description;
     item.priority = editItem.priority;
 
     mode = "show";
   }
 
-  delete() => agenda.deleteItem(item);
-  cancel() => mode = "show";
+  void delete() {
+    agenda.deleteItem(item);
+  }
 
+  void cancel() {
+    mode = "show";
+  }
 
-  get valid => editItem.valid;
+  bool get valid => editItem.valid;
 
-  get checkable => agenda.checkable;
+  bool get checkable => agenda.checkable;
 }

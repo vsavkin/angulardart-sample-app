@@ -6,5 +6,5 @@ class User {
 
   User(this.name, this.isOnline);
 
-  toString() => "${name} - ${isOnline}";
+  String toString() => "${name} - ${isOnline}";
 }
