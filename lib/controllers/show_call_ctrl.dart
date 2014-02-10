@@ -14,7 +14,6 @@ class ShowCallCtrl {
       Scope scope, UsersRepository repo){
     call = storage.find(_callId(routeProvider));
     _checkIfOnline(call.name, repo.all());
-
     scope.$watch(_watchExp, _store);
   }
 
