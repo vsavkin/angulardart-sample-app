@@ -24,13 +24,9 @@ class ShowCallCtrl {
     });
   }
 
-  void _watchExp() {
-    serializer.serialize(call, call.id);
-  }
+  String _watchExp() => serializer.serialize(call, call.id);
 
-  void _store() {
-    storage.store(call);
-  }
+  void _store() => storage.store(call);
 
   String _callId(routeProvider) => routeProvider.parameters["callId"];
 }
