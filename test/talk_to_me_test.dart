@@ -8,7 +8,7 @@ import 'dart:html' as html;
 import 'package:angular/angular.dart';
 import 'package:angular/mock/module.dart';
 
-import '../web/talk_to_me.dart';
+import 'package:talk_to_me/talk_to_me.dart';
 
 part 'unit/parse_agenda_item_test.dart';
 part 'unit/agenda_item_test.dart';
