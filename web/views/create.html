@@ -3,11 +3,10 @@
 </div>
 
 <div class="col-md-8" create-call-ctrl>
-  <form onsubmit="return false;">
-
+  <form name="createForm">
     <div class="row">
       <h3>Name</h3>
-      <input class="form-control" type="text" ng-model="ctrl.call.name">
+      <input class="form-control" type="text" ng-model="ctrl.call.name" ng-required="true">
     </div>
 
     <div class="row">
@@ -15,7 +14,7 @@
     </div>
 
     <div class="row create-row">
-      <button class="btn btn-primary btn-block" type="submit" ng-click="ctrl.create()" ng-disabled="!ctrl.call.valid">Create</button>
+      <button class="btn btn-primary btn-block" type="submit" ng-click="ctrl.create()" ng-disabled="createForm.invalid">Create</button>
     </div>
   </form>
 </div>
