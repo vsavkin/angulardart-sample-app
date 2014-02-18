@@ -50,7 +50,7 @@ agenda-item {
     color: lightgrey;
 }
 
-agenda-item-input {
+.agenda-item-input {
     position: relative;
     padding-bottom: 20px;
     overflow: hidden;

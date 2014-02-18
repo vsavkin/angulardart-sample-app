@@ -1,9 +1,11 @@
 <h3>Call Agenda</h3>
 
 <div class="input-group">
-  <input type="agenda-item" class="form-control" ng-model="ctrl.newAgendaItem"/>
-  <div class="hint" ng-if="ctrl.valid">
-    {{ctrl.newAgendaItem.description}}, Priority: {{ctrl.newAgendaItem.priority}}
+  <div class="agenda-item-input">
+    <input type="agenda-item" class="form-control" ng-model="ctrl.newAgendaItem"/>
+    <div class="hint" ng-if="ctrl.valid">
+      {{ctrl.newAgendaItem.description}}, Priority: {{ctrl.newAgendaItem.priority}}
+    </div>
   </div>
 
   <span class="input-group-btn">
