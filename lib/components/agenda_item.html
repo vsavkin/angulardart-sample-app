@@ -19,15 +19,18 @@
 
 <div ng-if="ctrl.isEdit">
   <div class="input-group">
-    <agenda-item-input item="ctrl.editItem"></agenda-item-input>
+    <input type="agenda-item" class="form-control" ng-model="ctrl.editItem"/>
+    <div class="hint" ng-if="ctrl.editItem.valid">
+      {{ctrl.editItem.description}}, Priority: {{ctrl.editItem.priority}}
+    </div>
 
-      <span class="input-group-btn">
-        <button class="btn btn-default" ng-click="ctrl.save()" type="submit" ng-disabled="!ctrl.valid">
-          <span class="glyphicon glyphicon-floppy-disk"></span>
-        </button>
-        <button class="btn btn-default" ng-click="ctrl.cancel()" type="reset">
-          <span class="glyphicon glyphicon-ban-circle"></span>
-        </button>
-      </span>
+    <span class="input-group-btn">
+      <button class="btn btn-default" ng-click="ctrl.save()" type="submit" ng-disabled="!ctrl.valid">
+        <span class="glyphicon glyphicon-floppy-disk"></span>
+      </button>
+      <button class="btn btn-default" ng-click="ctrl.cancel()" type="reset">
+        <span class="glyphicon glyphicon-ban-circle"></span>
+      </button>
+    </span>
   </div>
 </div>
