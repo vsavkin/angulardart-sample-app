@@ -40,7 +40,7 @@ testAgendaItemComponent(){;
 
       test("defaults to the show mode", (){
         compileComponent(html(), scope(), (shadowRoot){
-          expect(shadowRoot.query("agenda-item-input"), isNull);
+          expect(shadowRoot.query("input[type=agenda-item]"), isNull);
         });
       });
 
@@ -50,7 +50,7 @@ testAgendaItemComponent(){;
 
           switchBtn.click();
 
-          expect(shadowRoot.query("agenda-item-input"), isNotNull);
+          expect(shadowRoot.query("input[type=agenda-item]"), isNotNull);
         });
       });
 
@@ -62,7 +62,7 @@ testAgendaItemComponent(){;
 
           cancelBtn.click();
 
-          expect(shadowRoot.query("agenda-item-input"), isNull);
+          expect(shadowRoot.query("input[type=agenda-item]"), isNull);
         });
       });
     });

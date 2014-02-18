@@ -12,22 +12,27 @@ import 'package:uuid/uuid.dart' show Uuid;
 part 'services/call_serializer.dart';
 part 'services/call_storage.dart';
 part 'services/users_repository.dart';
-part 'services/parse_agenda_item.dart';
 part 'services/messages.dart';
+part 'services/parse_agenda_item.dart';
+
 part 'talk_to_me_route_initializer.dart';
 part 'global_http_interceptors.dart';
+
+part 'directives/agenda_item_text_input.dart';
+
 part 'components/toggle_component.dart';
 part 'components/call_component.dart';
 part 'components/agenda_component.dart';
 part 'components/agenda_item_component.dart';
-part 'components/agenda_item_input_component.dart';
 part 'components/global_alert_component.dart';
-part 'models/call.dart';
-part 'models/agenda_item.dart';
-part 'models/user.dart';
+
 part 'controllers/list_ctrl.dart';
 part 'controllers/create_call_ctrl.dart';
 part 'controllers/show_call_ctrl.dart';
+
+part 'models/call.dart';
+part 'models/agenda_item.dart';
+part 'models/user.dart';
 
 class TalkToMeApp extends Module {
   TalkToMeApp(){
@@ -35,13 +40,12 @@ class TalkToMeApp extends Module {
     type(CreateCallCtrl);
     type(ShowCallCtrl);
 
-    type(AgendaItemInputComponent);
+    type(AgendaItemTextInput);
     type(AgendaItemComponent);
     type(AgendaComponent);
     type(CallComponent);
     type(ToggleComponent);
 
-    type(ParseAgendaItem);
     type(CallSerializer);
     type(CallStorage);
     type(UsersRepository);

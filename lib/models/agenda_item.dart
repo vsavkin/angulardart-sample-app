@@ -7,7 +7,10 @@ class AgendaItem {
 
   AgendaItem(this.description, this.done, this.priority);
 
-  bool get valid => description.isNotEmpty && priority != null;
-
   num get extPriority => done ? 4 : priority;
+
+  bool get valid => description.isNotEmpty && priority != null;
+  bool get isNew => description.isEmpty && priority == 3;
+
+  operator == (AgendaItem a) => description == a.description && done == a.done && priority == a.priority;
 }
