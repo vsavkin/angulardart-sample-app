@@ -1,6 +1,6 @@
 <h3>Call Agenda</h3>
 
-<div class="input-group">
+<form class="input-group">
   <div class="agenda-item-input">
     <input type="agenda-item" class="form-control" ng-model="ctrl.newAgendaItem"/>
     <div class="hint" ng-if="ctrl.valid">
@@ -9,10 +9,10 @@
   </div>
 
   <span class="input-group-btn">
-    <button class="btn btn-default" ng-click="ctrl.addItem()" ng-disabled="!ctrl.valid">
+    <button type="submit" class="btn btn-default" ng-click="ctrl.addItem()" ng-disabled="!ctrl.valid">
       <span class="glyphicon glyphicon-plus"></span>
     </button>
   </span>
-</div>
+</form>
 
 <agenda-item ng-repeat="item in ctrl.model | orderBy: 'extPriority'" item="item" agenda="ctrl"></agenda-item>
