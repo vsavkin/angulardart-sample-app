@@ -6,6 +6,7 @@ import 'dart:convert';
 
 import 'package:angular/angular.dart';
 import 'package:angular/routing/module.dart';
+import 'package:angular/animate/module.dart';
 import 'package:logging/logging.dart';
 import 'package:uuid/uuid_client.dart';
 
@@ -57,6 +58,7 @@ class TalkToMeApp extends Module {
     factory(NgRoutingUsePushState, (_) => new NgRoutingUsePushState.value(false));
 
     type(UrlRewriter, implementedBy: TalkToMeUrlRewriter);
+    install(new NgAnimateModule());
   }
 }
 

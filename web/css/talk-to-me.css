@@ -122,3 +122,27 @@ agenda-item {
     top: 250px;
 
 }
+
+
+agenda-item.ng-enter {
+    transition: all 200ms;
+    -webkit-transform: scale(1.1, 1.1);
+    opacity: 0;
+}
+
+agenda-item.ng-enter.ng-enter-active {
+    -webkit-transform: scale(1.0, 1.0);
+    opacity: 1;
+}
+
+
+agenda-item.ng-leave {
+    transition: all 200ms;
+    -webkit-transform: scale(1.0, 1.0);
+    opacity: 1;
+}
+
+agenda-item.ng-leave-active {
+    -webkit-transform: scale(1.1, 1.1);
+    opacity: 0;
+}
