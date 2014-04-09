@@ -1,5 +1,5 @@
 <div class="row call-row">
-  <toggle toggle-property="ctrl.open">
+  <toggle toggle-property="ctrl.open" ng-class="{'open': ctrl.open}">
     <when-closed>
       <div ng-if="ctrl.isOnline">
         <button class="btn btn-default" ng-click="ctrl.open = true">

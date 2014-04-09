@@ -12,15 +12,21 @@ loadTemplates(List<String> templates){
 
 compileComponent(String html, Map scope, callback){
   inject((TestBed tb) {
-    final s = tb.rootScope.$new();
-    scope.forEach((k,v) => s[k] = v);
+    final s = tb.rootScope.createChild(scope);
 
     final el = tb.compile(html, scope: s);
 
     Timer.run(expectAsync0(() {
-      tb.rootScope.$digest();
+      digest();
       callback(el.shadowRoot);
     }));
+  });
+}
+
+digest(){
+  inject((TestBed tb) {
+    tb.rootScope.digest();
+    tb.rootScope.flush();
   });
 }
 
@@ -50,6 +56,8 @@ testAgendaItemComponent(){;
 
           switchBtn.click();
 
+          digest();
+
           expect(shadowRoot.query("input[type=agenda-item]"), isNotNull);
         });
       });
@@ -58,9 +66,13 @@ testAgendaItemComponent(){;
         compileComponent(html(), scope(), (shadowRoot){
           shadowRoot.query("button.switch-to-edit").click();
 
+          digest();
+
           final cancelBtn = shadowRoot.query("button[type=reset]");
 
           cancelBtn.click();
+
+          digest();
 
           expect(shadowRoot.query("input[type=agenda-item]"), isNull);
         });
