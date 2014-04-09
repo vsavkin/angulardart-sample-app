@@ -10,7 +10,7 @@ class GlobalAlertComponent {
   String message;
 
   GlobalAlertComponent(Scope scope) {
-    scope.$on("globalAlert", this._showMessage);
+    scope.on("globalAlert").listen(this._showMessage);
   }
 
   void _showMessage(_, String message) {
