@@ -54,10 +54,11 @@ class TalkToMeApp extends Module {
     type(Messages);
     type(GlobalAlertComponent);
 
-    type(RouteInitializer, implementedBy: TalkToMeRouteInitializer);
+    value(RouteInitializerFn, talkToMeRouteInitializer);
     factory(NgRoutingUsePushState, (_) => new NgRoutingUsePushState.value(false));
 
     type(UrlRewriter, implementedBy: TalkToMeUrlRewriter);
+
     install(new NgAnimateModule());
   }
 }
