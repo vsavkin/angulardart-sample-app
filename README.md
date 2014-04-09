@@ -38,7 +38,6 @@ If you have any data in your local storage the application may not work as expec
 ## To do
 
 * Transclusion
-* Testing
 * Validations
 * Application state management
 * Shadow DOM
@@ -57,3 +56,4 @@ If you have any data in your local storage the application may not work as expec
 * Using the Http service => `users_repository.dart`
 * Configuring injectables => `global_http_interceptors.dart`
 * Using scopes for message passing => `messages.dart` and `global_alert_component.dart`
+* Testing => All files in `test/unit`
