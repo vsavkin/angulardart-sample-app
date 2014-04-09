@@ -7,7 +7,7 @@ import 'dart:convert';
 import 'package:angular/angular.dart';
 import 'package:angular/routing/module.dart';
 import 'package:logging/logging.dart';
-import 'package:uuid/uuid.dart' show Uuid;
+import 'package:uuid/uuid_client.dart';
 
 part 'services/call_serializer.dart';
 part 'services/call_storage.dart';
