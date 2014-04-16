@@ -13,7 +13,7 @@ class GlobalAlertComponent {
     scope.on("globalAlert").listen(this._showMessage);
   }
 
-  void _showMessage(_, String message) {
-    this.message = message;
+  void _showMessage(ScopeEvent event) {
+    this.message = event.data;
   }
 }

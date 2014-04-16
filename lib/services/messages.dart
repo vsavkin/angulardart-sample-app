@@ -1,11 +1,11 @@
 part of talk_to_me;
 
 class Messages {
-  Scope rootScope;
+  RootScope rootScope;
 
-  Messages(Scope scope) : rootScope = scope.$root;
+  Messages(this.rootScope);
 
   void alert(String message){
-    rootScope.$broadcast("globalAlert", [message]);
+    rootScope.broadcast("globalAlert", message);
   }
 }
