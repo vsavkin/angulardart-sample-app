@@ -25,7 +25,9 @@ class ShowCallCtrl {
 
   String _watchExp() => serializer.serialize(call, call.id);
 
-  void _store(value, prev) => storage.store(call);
+  void _store(value, prev){
+    storage.store(call);
+  }
 
   String _callId(routeProvider) => routeProvider.parameters["callId"];
 }

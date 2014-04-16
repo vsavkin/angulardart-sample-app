@@ -1,6 +1,6 @@
 part of talk_to_me;
 
-void talkToMeRouteInitializer(Router router, ViewFactory view) {
+void talkToMeRouteInitializer(Router router, RouteViewFactory view) {
   router.root
     ..addRoute(
         name: 'create',
