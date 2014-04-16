@@ -8,16 +8,18 @@ class TestResponse {
 }
 
 waitForHttp(future, callback) =>
-  Timer.run(expectAsync0(() {
+  Timer.run(expectAsync(() {
     inject((MockHttpBackend http) => http.flush());
     future.then(callback);
   }));
+
+class HttpTestDouble extends TestDouble implements Http {}
 
 testUsersRepository(){
   group("[UsersRepository - without using Angular helpers]", (){
     group("[all]", (){
       test("getting a list of users", (){
-        final http = new TestDouble()
+        final http = new HttpTestDouble()
           ..stub("get").
             args("api/users.json").
             andReturn(TestResponse.async([{"name" : "Jerry", "isOnline" : true}]));
