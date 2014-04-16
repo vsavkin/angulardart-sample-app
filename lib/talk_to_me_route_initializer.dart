@@ -1,7 +1,6 @@
 part of talk_to_me;
 
-class TalkToMeRouteInitializer implements RouteInitializer {
-  init(Router router, ViewFactory view) {
+RouteInitializerFn talkToMeRouteInitializer = (Router router, RouteViewFactory view) {
     router.root
       ..addRoute(
           name: 'create',
@@ -20,5 +19,4 @@ class TalkToMeRouteInitializer implements RouteInitializer {
                path: "/:callId/show",
                enter: view('views/show.html'))
       );
-  }
-}
+  };

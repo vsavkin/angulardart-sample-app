@@ -15,7 +15,7 @@ class ShowCallCtrl {
     call = storage.find(_callId(routeProvider));
     _checkIfOnline(call.name, repo.all());
 
-    scope.$watch(_watchExp, _store);
+    scope.watch(_watchExp(), _store);
   }
 
   Future _checkIfOnline(String userName, Future<List<User>> users) {
@@ -26,7 +26,9 @@ class ShowCallCtrl {
 
   String _watchExp() => serializer.serialize(call, call.id);
 
-  void _store() => storage.store(call);
+  void _store(value, previousValue) {
+    storage.store(call);
+  }
 
   String _callId(routeProvider) => routeProvider.parameters["callId"];
 }

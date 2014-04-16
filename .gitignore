@@ -3,3 +3,4 @@ packages
 *.dart.*
 build
 /.project
+node_modules

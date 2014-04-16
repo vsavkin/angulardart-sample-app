@@ -8,6 +8,7 @@ import 'dart:convert';
 import 'dart:mirrors';
 
 import 'package:angular/angular.dart';
+import 'package:angular/angular_dynamic.dart';
 import 'package:angular/routing/module.dart';
 import 'package:logging/logging.dart';
 import 'package:uuid/uuid.dart' show Uuid;
@@ -52,7 +53,7 @@ class TalkToMeApp extends Module {
     type(Messages);
     type(GlobalAlertComponent);
 
-    type(RouteInitializer, implementedBy: TalkToMeRouteInitializer);
+    value(RouteInitializerFn, talkToMeRouteInitializer);
     factory(NgRoutingUsePushState, (_) => new NgRoutingUsePushState.value(false));
 
     type(UrlRewriter, implementedBy: TalkToMeUrlRewriter);
@@ -68,6 +69,6 @@ main(){
   Logger.root.level = Level.FINEST;
   Logger.root.onRecord.listen((LogRecord r) { print(r.message); });
 
-  Injector inj = ngBootstrap(module: new TalkToMeApp());
+  Injector inj = ngDynamicApp().addModule(new TalkToMeApp()).run();
   GlobalHttpInterceptors.setUp(inj);
 }

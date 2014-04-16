@@ -18,7 +18,7 @@ class AgendaItemInputComponent {
 
     //TODO delete it when ngModel supports custom converters
     description = "";
-    scope.$watch(() => item, (_) {
+    scope.watch("item", (value, previousValue) {
       if (isEmptyItem(item)) {
         description = "";
       } else if (description == "") {

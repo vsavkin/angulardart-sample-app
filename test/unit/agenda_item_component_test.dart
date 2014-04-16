@@ -12,13 +12,13 @@ loadTemplates(List<String> templates){
 
 compileComponent(String html, Map scope, callback){
   inject((TestBed tb) {
-    final s = tb.rootScope.$new();
+    final s = tb.rootScope;
     scope.forEach((k,v) => s[k] = v);
 
     final el = tb.compile(html, scope: s);
 
     Timer.run(expectAsync0(() {
-      tb.rootScope.$digest();
+      tb.rootScope.apply();
       callback(el.shadowRoot);
     }));
   });
