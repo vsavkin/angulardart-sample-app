@@ -7,6 +7,7 @@ import 'dart:html' as html;
 
 import 'package:angular/angular.dart';
 import 'package:angular/mock/module.dart';
+import 'package:angular/mock/test_injection.dart';
 
 import 'package:talk_to_me/talk_to_me.dart';
 

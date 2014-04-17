@@ -7,6 +7,7 @@ import 'dart:convert';
 import 'package:angular/angular.dart';
 import 'package:angular/routing/module.dart';
 import 'package:angular/animate/module.dart';
+import 'package:angular/angular_dynamic.dart';
 import 'package:logging/logging.dart';
 import 'package:uuid/uuid_client.dart';
 
@@ -69,6 +70,6 @@ class TalkToMeUrlRewriter implements UrlRewriter {
 }
 
 startTalkToMeApp(){
-  Injector inj = ngBootstrap(module: new TalkToMeApp());
+  Injector inj = ngDynamicApp().addModule(new TalkToMeApp()).run();
   GlobalHttpInterceptors.setUp(inj);
 }
