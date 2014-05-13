@@ -1,6 +1,6 @@
 part of talk_to_me;
 
-@NgComponent(
+@Component(
     selector: 'agenda-item',
     templateUrl: 'lib:components/agenda_item.html',
     applyAuthorStyles: true,

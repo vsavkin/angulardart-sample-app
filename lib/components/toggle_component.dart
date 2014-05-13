@@ -1,6 +1,6 @@
 part of talk_to_me;
 
-@NgComponent(
+@Component(
     selector: 'toggle',
     templateUrl: 'lib:components/toggle.html',
     publishAs: 'ctrl'

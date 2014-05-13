@@ -1,6 +1,6 @@
 part of talk_to_me;
 
-@NgDirective(selector: 'input[type=agenda-item][ng-model]')
+@Decorator(selector: 'input[type=agenda-item][ng-model]')
 class AgendaItemTextInput {
   ParseAgendaItem parseAgendaItem;
   Scope scope;

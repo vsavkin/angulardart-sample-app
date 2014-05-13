@@ -1,6 +1,6 @@
 part of talk_to_me;
 
-@NgComponent(
+@Component(
     selector: 'agenda',
     templateUrl: 'lib:components/agenda.html',
     publishAs: 'ctrl',

@@ -1,6 +1,6 @@
 part of talk_to_me;
 
-@NgController(
+@Controller(
     selector: "[show-call-ctrl]",
     publishAs: "ctrl"
 )
