@@ -1,12 +1,12 @@
 part of talk_to_me;
 
-@NgComponent(
+@Component(
     selector: 'call',
     templateUrl: 'lib:components/call.html',
     publishAs: 'ctrl',
     applyAuthorStyles: true
 )
-class CallComponent implements NgAttachAware {
+class CallComponent implements AttachAware {
   Object videoSrc;
 
   @NgOneWay("is-online")

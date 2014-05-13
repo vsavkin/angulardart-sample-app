@@ -7,7 +7,7 @@ import 'dart:convert';
 import 'package:angular/angular.dart';
 import 'package:angular/routing/module.dart';
 import 'package:angular/animate/module.dart';
-import 'package:angular/angular_dynamic.dart';
+import 'package:angular/application_factory.dart';
 import 'package:logging/logging.dart';
 import 'package:uuid/uuid_client.dart';
 
@@ -20,7 +20,7 @@ part 'services/parse_agenda_item.dart';
 part 'talk_to_me_route_initializer.dart';
 part 'global_http_interceptors.dart';
 
-part 'directives/agenda_item_text_input.dart';
+part 'decorators/agenda_item_text_input.dart';
 
 part 'components/toggle_component.dart';
 part 'components/call_component.dart';
@@ -60,7 +60,7 @@ class TalkToMeApp extends Module {
 
     type(UrlRewriter, implementedBy: TalkToMeUrlRewriter);
 
-    install(new NgAnimateModule());
+    install(new AnimationModule());
   }
 }
 
@@ -70,6 +70,6 @@ class TalkToMeUrlRewriter implements UrlRewriter {
 }
 
 startTalkToMeApp(){
-  Injector inj = ngDynamicApp().addModule(new TalkToMeApp()).run();
+  Injector inj = applicationFactory().addModule(new TalkToMeApp()).run();
   GlobalHttpInterceptors.setUp(inj);
 }

@@ -1,6 +1,6 @@
 part of talk_to_me;
 
-@NgComponent(
+@Component(
     selector: 'global-alert',
     templateUrl: 'lib:components/global_alert.html',
     publishAs: 'ctrl',
