@@ -16,9 +16,9 @@ waitForHttp(future, callback) =>
 class HttpTestDouble extends TestDouble implements Http {}
 
 testUsersRepository(){
-  group("[UsersRepository - without using Angular helpers]", (){
-    group("[all]", (){
-      test("getting a list of users", (){
+  describe("[UsersRepository - without using Angular helpers]", (){
+    describe("[all]", (){
+      it("gets a list of users", (){
         final http = new HttpTestDouble()
           ..stub("get").
             args("api/users.json").
@@ -27,28 +27,28 @@ testUsersRepository(){
         final repo = new UsersRepository(http);
 
         repo.all().then((users){
-          expect(users[0].name, equals("Jerry"));
-          expect(users[0].isOnline, isTrue);
+          expect(users[0].name).toEqual("Jerry");
+          expect(users[0].isOnline).toBeTruthy();
         });
       });
     });
   });
 
-  group("[UsersRepository - with using Angular helpers]", () {
-    setUp(setUpInjector);
-    tearDown(tearDownInjector);
+  describe("[UsersRepository - with using Angular helpers]", () {
+    beforeEach(setUpInjector);
+    afterEach(tearDownInjector);
 
-    group("[all]", () {
-      setUp(module((Module _) => _
+    describe("[all]", () {
+      beforeEach(module((Module _) => _
         ..type(MockHttpBackend)
         ..type(UsersRepository)));
 
-      test("getting a list of users", inject((MockHttpBackend http, UsersRepository repo) {
+      it("gets a list of users", inject((MockHttpBackend http, UsersRepository repo) {
         http.whenGET("api/users.json").respond('[{"name":"Jerry", "isOnline":true}]');
 
         waitForHttp(repo.all(), (users){
-          expect(users[0].name, equals("Jerry"));
-          expect(users[0].isOnline, isTrue);
+          expect(users[0].name).toEqual("Jerry");
+          expect(users[0].isOnline).toBeTruthy();
         });
       }));
     });

@@ -1,6 +1,7 @@
 library talk_to_me_test;
 
-import 'package:unittest/unittest.dart';
+import 'package:guinness/guinness_html.dart';
+import 'package:unittest/unittest.dart' show expectAsync;
 import 'package:dartmocks/dartmocks.dart';
 import 'dart:async';
 import 'dart:html' as html;
@@ -18,9 +19,13 @@ part 'unit/users_repository_test.dart';
 part 'unit/agenda_item_component_test.dart';
 
 main(){
+  guinnessEnableHtmlMatchers();
+
   testParseAgendaItem();
   testAgendaItem();
   testCreateCallCtrl();
   testUsersRepository();
   testAgendaItemComponent();
+
+  guinness.initSpecs();
 }
