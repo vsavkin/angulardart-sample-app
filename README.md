@@ -56,3 +56,11 @@ If you have any data in your local storage the application may not work as expec
 * Configuring injectables => `global_http_interceptors.dart`
 * Using scopes for message passing => `messages.dart` and `global_alert_component.dart`
 * Testing => All files in `test/unit`
+
+# Credits
+
+* Victor Savkin
+* Seth Ladd
+* Pavel Jbanov
+* Patrice Chalin
+* Adam Singer
