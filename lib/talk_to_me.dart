@@ -8,7 +8,6 @@ import 'package:angular/angular.dart';
 import 'package:angular/routing/module.dart';
 import 'package:angular/animate/module.dart';
 import 'package:angular/application_factory.dart';
-import 'package:logging/logging.dart';
 import 'package:uuid/uuid_client.dart';
 
 part 'services/call_serializer.dart';
@@ -38,27 +37,27 @@ part 'models/user.dart';
 
 class TalkToMeApp extends Module {
   TalkToMeApp(){
-    type(ListCtrl);
-    type(CreateCallCtrl);
-    type(ShowCallCtrl);
+    bind(ListCtrl);
+    bind(CreateCallCtrl);
+    bind(ShowCallCtrl);
 
-    type(AgendaItemTextInput);
-    type(AgendaItemComponent);
-    type(AgendaComponent);
-    type(CallComponent);
-    type(Toggle);
+    bind(AgendaItemTextInput);
+    bind(AgendaItemComponent);
+    bind(AgendaComponent);
+    bind(CallComponent);
+    bind(Toggle);
 
-    type(CallSerializer);
-    type(CallStorage);
-    type(UsersRepository);
+    bind(CallSerializer);
+    bind(CallStorage);
+    bind(UsersRepository);
 
-    type(Messages);
-    type(GlobalAlertComponent);
+    bind(Messages);
+    bind(GlobalAlertComponent);
 
-    value(RouteInitializerFn, talkToMeRouteInitializer);
-    factory(NgRoutingUsePushState, (_) => new NgRoutingUsePushState.value(false));
+    bind(RouteInitializerFn, toValue: talkToMeRouteInitializer);
+    bind(NgRoutingUsePushState, toFactory: (_) => new NgRoutingUsePushState.value(false));
 
-    type(UrlRewriter, implementedBy: TalkToMeUrlRewriter);
+    bind(UrlRewriter, toImplementation: TalkToMeUrlRewriter);
 
     install(new AnimationModule());
   }

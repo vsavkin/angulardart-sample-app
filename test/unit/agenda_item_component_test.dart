@@ -39,7 +39,7 @@ testAgendaItemComponent(){;
       scope() => {"item" : new AgendaItem("description", true, 1), "agenda" : new AgendaComponent()};
 
       beforeEach((){
-        module((Module _) => _..type(TestBed)..type(AgendaItemComponent));
+        module((Module _) => _..bind(TestBed)..bind(AgendaItemComponent));
         return loadTemplates(['lib:components/agenda_item.html']);
       });
 
