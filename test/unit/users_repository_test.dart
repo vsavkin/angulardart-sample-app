@@ -8,10 +8,10 @@ class TestResponse {
 }
 
 waitForHttp(future, callback) =>
-  Timer.run(expectAsync(() {
+  scheduleMicrotask(() {
     inject((MockHttpBackend http) => http.flush());
     future.then(callback);
-  }));
+  });
 
 class HttpTestDouble extends TestDouble implements Http {}
 
@@ -46,7 +46,7 @@ testUsersRepository(){
       it("gets a list of users", inject((MockHttpBackend http, UsersRepository repo) {
         http.whenGET("api/users.json").respond('[{"name":"Jerry", "isOnline":true}]');
 
-        waitForHttp(repo.all(), (users){
+        waitForHttp(repo.all(), (users) {
           expect(users[0].name).toEqual("Jerry");
           expect(users[0].isOnline).toBeTruthy();
         });
