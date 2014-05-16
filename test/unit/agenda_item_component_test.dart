@@ -30,34 +30,34 @@ digest(){
 }
 
 testAgendaItemComponent(){;
-  group("[AgendaItemComponent]", () {
-    setUp(setUpInjector);
-    tearDown(tearDownInjector);
+  describe("[AgendaItemComponent]", () {
+    beforeEach(setUpInjector);
+    afterEach(tearDownInjector);
 
-    group("[swiching between modes]", () {
+    describe("[swiching between modes]", () {
       html() => '<agenda-item item="item" agenda="agenda"></agenda-item>';
       scope() => {"item" : new AgendaItem("description", true, 1), "agenda" : new AgendaComponent()};
 
-      setUp((){
+      beforeEach((){
         module((Module _) => _..type(TestBed)..type(AgendaItemComponent));
         return loadTemplates(['lib:components/agenda_item.html']);
       });
 
-      test("defaults to the show mode", compileComponent(html(), scope(), (shadowRoot){
-        expect(shadowRoot.query("input[type=agenda-item]"), isNull);
+      it("defaults to the show mode", compileComponent(html(), scope(), (shadowRoot){
+        expect(shadowRoot.query("input[type=agenda-item]")).toBeNull();
       }));
 
-      test("switches to edit", compileComponent(html(), scope(), (shadowRoot) {
+      it("switches to edit", compileComponent(html(), scope(), (shadowRoot) {
         final switchBtn = shadowRoot.query("button.switch-to-edit");
 
         switchBtn.click();
 
         digest();
 
-        expect(shadowRoot.query("input[type=agenda-item]"), isNotNull);
+        expect(shadowRoot.query("input[type=agenda-item]")).toBeDefined();
       }));
 
-      test("switches to show", compileComponent(html(), scope(), (shadowRoot) {
+      it("switches to show", compileComponent(html(), scope(), (shadowRoot) {
         shadowRoot.query("button.switch-to-edit").click();
 
         digest();
@@ -67,7 +67,7 @@ testAgendaItemComponent(){;
 
         digest();
 
-        expect(shadowRoot.query("input[type=agenda-item]"), isNull);
+        expect(shadowRoot.query("input[type=agenda-item]")).toBeNull();
       }));
     });
   });
