@@ -40,8 +40,8 @@ testUsersRepository(){
 
     describe("[all]", () {
       beforeEach(module((Module _) => _
-        ..type(MockHttpBackend)
-        ..type(UsersRepository)));
+        ..bind(MockHttpBackend)
+        ..bind(UsersRepository)));
 
       it("gets a list of users", inject((MockHttpBackend http, UsersRepository repo) {
         http.whenGET("api/users.json").respond('[{"name":"Jerry", "isOnline":true}]');

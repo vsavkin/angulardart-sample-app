@@ -1,7 +1,6 @@
 library talk_to_me_test;
 
 import 'package:guinness/guinness_html.dart';
-import 'package:unittest/unittest.dart' show expectAsync;
 import 'package:dartmocks/dartmocks.dart';
 import 'dart:async';
 import 'dart:html' as html;
