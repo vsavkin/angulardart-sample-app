@@ -20,8 +20,8 @@ part 'talk_to_me_route_initializer.dart';
 part 'global_http_interceptors.dart';
 
 part 'decorators/agenda_item_text_input.dart';
+part 'decorators/toggle.dart';
 
-part 'components/toggle_component.dart';
 part 'components/call_component.dart';
 part 'components/agenda_component.dart';
 part 'components/agenda_item_component.dart';
@@ -45,7 +45,7 @@ class TalkToMeApp extends Module {
     bind(AgendaItemComponent);
     bind(AgendaComponent);
     bind(CallComponent);
-    bind(ToggleComponent);
+    bind(Toggle);
 
     bind(CallSerializer);
     bind(CallStorage);

@@ -20,7 +20,7 @@ compileComponent(String html, Map scope, callback){
 
       digest();
 
-      callback(el.shadowRoot);
+      callback(el);
     });
   });
 }
