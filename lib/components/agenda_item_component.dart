@@ -3,7 +3,7 @@ part of talk_to_me;
 @Component(
     selector: 'agenda-item',
     templateUrl: 'lib:components/agenda_item.html',
-    applyAuthorStyles: true,
+    useShadowDom: false,
     publishAs: 'ctrl'
 )
 class AgendaItemComponent {

@@ -4,7 +4,7 @@ part of talk_to_me;
     selector: 'call',
     templateUrl: 'lib:components/call.html',
     publishAs: 'ctrl',
-    applyAuthorStyles: true
+    useShadowDom: false
 )
 class CallComponent implements AttachAware {
   Object videoSrc;

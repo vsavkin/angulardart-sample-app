@@ -4,7 +4,7 @@ part of talk_to_me;
     selector: 'agenda',
     templateUrl: 'lib:components/agenda.html',
     publishAs: 'ctrl',
-    applyAuthorStyles: true
+    useShadowDom: false
 )
 class AgendaComponent {
   @NgOneWayOneTime("checkable")

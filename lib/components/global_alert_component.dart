@@ -4,7 +4,7 @@ part of talk_to_me;
     selector: 'global-alert',
     templateUrl: 'lib:components/global_alert.html',
     publishAs: 'ctrl',
-    applyAuthorStyles: true
+    useShadowDom: false
 )
 class GlobalAlertComponent {
   String message;
