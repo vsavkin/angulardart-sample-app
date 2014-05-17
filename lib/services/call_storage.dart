@@ -1,5 +1,6 @@
 part of talk_to_me;
 
+@Injectable()
 class CallStorage {
   CallSerializer serializer;
 

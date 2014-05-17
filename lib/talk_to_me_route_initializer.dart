@@ -1,5 +1,6 @@
 part of talk_to_me;
 
+@Injectable()
 void talkToMeRouteInitializer(Router router, RouteViewFactory view) {
   router.root
     ..addRoute(

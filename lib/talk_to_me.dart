@@ -7,7 +7,6 @@ import 'dart:convert';
 import 'package:angular/angular.dart';
 import 'package:angular/routing/module.dart';
 import 'package:angular/animate/module.dart';
-import 'package:angular/application_factory.dart';
 import 'package:uuid/uuid_client.dart';
 
 part 'services/call_serializer.dart';
@@ -63,12 +62,8 @@ class TalkToMeApp extends Module {
   }
 }
 
+@Injectable()
 class TalkToMeUrlRewriter implements UrlRewriter {
   String call(url) =>
   url.startsWith('lib:') ? 'packages/talk_to_me/${url.substring(4)}' : url;
-}
-
-startTalkToMeApp(){
-  Injector inj = applicationFactory().addModule(new TalkToMeApp()).run();
-  GlobalHttpInterceptors.setUp(inj);
 }
