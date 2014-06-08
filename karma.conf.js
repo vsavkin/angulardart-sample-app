@@ -2,15 +2,25 @@ module.exports = function(config) {
   config.set({
     basePath: '.',
     frameworks: ['dart-unittest'],
+
     files: [
-      'test/*.dart',
-      {pattern: '**/*.dart', watched: true, included: false, served: true},
-      {pattern: '**/*.html', served: true, included: false},
-      'packages/browser/dart.js',
-      'packages/browser/interop.js'
+      {pattern: 'test/talk_to_me_test.dart',  included: true},
+      {pattern: '**/*.dart', 				          included: false},
+      {pattern: '**/*.html', 				          included: false}
     ],
+
+    exclude: [
+    ],
+
     autoWatch: true,
-    captureTimeout: 5000,
-    plugins: ['karma-dart']
+    captureTimeout: 20000,
+    browserNoActivityTimeout: 300000,
+
+    plugins: [
+      'karma-dart',
+      'karma-chrome-launcher'
+    ],
+
+    browsers: ['Dartium']
   });
 };
