@@ -40,7 +40,7 @@ testAgendaItemComponent(){;
 
       beforeEach((){
         module((Module _) => _..bind(TestBed)..bind(AgendaItemComponent));
-        return loadTemplates(['lib:components/agenda_item.html']);
+        return loadTemplates(['lib/components/agenda_item.html']);
       });
 
       it("defaults to the show mode", compileComponent(html(), scope(), (shadowRoot){

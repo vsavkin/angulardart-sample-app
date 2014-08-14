@@ -4,7 +4,7 @@ part of talk_to_me;
     selector: "show-call",
     publishAs: "ctrl",
     exportExpressions: const ['watchExp'],
-    templateUrl: 'lib:components/show_call.html',
+    templateUrl: 'lib/components/show_call.html',
     useShadowDom: false
 )
 class ShowCallComponent {

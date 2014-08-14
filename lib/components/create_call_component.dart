@@ -3,7 +3,7 @@ part of talk_to_me;
 @Component(
     selector: 'create-call',
     publishAs: 'ctrl',
-    templateUrl: 'lib:components/create_call.html',
+    templateUrl: 'lib/components/create_call.html',
     useShadowDom: false
 )
 class CreateCallComponent {

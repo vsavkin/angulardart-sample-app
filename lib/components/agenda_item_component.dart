@@ -2,7 +2,7 @@ part of talk_to_me;
 
 @Component(
     selector: 'agenda-item',
-    templateUrl: 'lib:components/agenda_item.html',
+    templateUrl: 'lib/components/agenda_item.html',
     useShadowDom: false,
     publishAs: 'ctrl'
 )

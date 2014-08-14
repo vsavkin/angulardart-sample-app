@@ -65,5 +65,5 @@ class TalkToMeApp extends Module {
 @Injectable()
 class TalkToMeUrlRewriter implements UrlRewriter {
   String call(url) =>
-  url.startsWith('lib:') ? 'packages/talk_to_me/${url.substring(4)}' : url;
+      url.startsWith('lib/') ? 'packages/talk_to_me/${url.substring(4)}' : url;
 }

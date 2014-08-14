@@ -3,7 +3,7 @@ part of talk_to_me;
 @Component(
     selector: 'list',
     publishAs: 'ctrl',
-    templateUrl: 'lib:components/list_calls.html',
+    templateUrl: 'lib/components/list_calls.html',
     useShadowDom: false
 )
 class ListCallsComponent {

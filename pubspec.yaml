@@ -10,12 +10,5 @@ dev_dependencies:
 environment:
   sdk: ">=0.8.10 <2.0.0"
 transformers:
-- angular:
-    html_files: ["lib/components/agenda.html",
-      "lib/components/agenda_item.html",
-      "lib/components/call.html",
-      "lib/components/create_call.html",
-      "lib/components/global_alert.html",
-      "lib/components/list_calls.html",
-      "lib/components/show_call.html"]
+- angular
 
