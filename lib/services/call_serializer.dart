@@ -1,5 +1,6 @@
 part of talk_to_me;
 
+@Injectable()
 class CallSerializer {
   String serialize(Call call, String id){
     var map = {

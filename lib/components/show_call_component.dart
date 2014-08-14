@@ -1,20 +1,23 @@
 part of talk_to_me;
 
-@Controller(
-    selector: "[show-call-ctrl]",
-    publishAs: "ctrl"
+@Component(
+    selector: "show-call",
+    publishAs: "ctrl",
+    exportExpressions: const ['watchExp'],
+    templateUrl: 'lib:components/show_call.html',
+    useShadowDom: false
 )
-class ShowCallCtrl {
+class ShowCallComponent {
   Call call;
   CallStorage storage;
   CallSerializer serializer;
   bool userIsOnline = false;
 
-  ShowCallCtrl(this.storage, this.serializer, RouteProvider routeProvider,
+  ShowCallComponent(this.storage, this.serializer, RouteProvider routeProvider,
       Scope scope, UsersRepository repo){
     call = storage.find(_callId(routeProvider));
     _checkIfOnline(call.name, repo.all());
-    scope.watch("watchExp()", _store, context: {"watchExp" : _watchExp});
+    scope.watch("watchExp()", _store, context: this);
   }
 
   Future _checkIfOnline(String userName, Future<List<User>> users) {
@@ -23,7 +26,7 @@ class ShowCallCtrl {
     });
   }
 
-  String _watchExp() => serializer.serialize(call, call.id);
+  String watchExp() => serializer.serialize(call, call.id);
 
   void _store(value, previousValue) {
     storage.store(call);

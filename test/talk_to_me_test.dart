@@ -13,7 +13,7 @@ import 'package:talk_to_me/talk_to_me.dart';
 
 part 'unit/parse_agenda_item_test.dart';
 part 'unit/agenda_item_test.dart';
-part 'unit/create_call_ctrl_test.dart';
+part 'unit/create_call_component_test.dart';
 part 'unit/users_repository_test.dart';
 part 'unit/agenda_item_component_test.dart';
 
@@ -22,7 +22,7 @@ main(){
 
   testParseAgendaItem();
   testAgendaItem();
-  testCreateCallCtrl();
+  testCreateCallComponent();
   testUsersRepository();
   testAgendaItemComponent();
 

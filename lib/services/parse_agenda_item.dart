@@ -1,5 +1,6 @@
 part of talk_to_me;
 
+@Injectable()
 class ParseAgendaItem {
   AgendaItem call(String description){
     final r = new RegExp(r'![123](\s|$)');

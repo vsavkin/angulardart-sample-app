@@ -1,0 +1,25 @@
+<div class="col-md-4">
+  <div class="row">
+    <div class="col-md-9">
+      <h2>Calls</h2>
+    </div>
+    <div class="col-md-3">
+      <a class="btn btn-primary btn-create" ng-href="#/create">Create</a>
+    </div>
+  </div>
+
+  <ul>
+    <li ng-repeat="call in ctrl.calls | orderBy: 'name'" ng-class="{'selected' : ctrl.isSelected(call)}">
+      <a href="#/list/{{call.id}}/show">{{call.name}}</a>
+    </li>
+  </ul>
+</div>
+
+<div class="col-md-8">
+  <div ng-if="ctrl.isAnySelected">
+    <ng-view></ng-view>
+  </div>
+  <div ng-if="!ctrl.isAnySelected" class="empty-call">
+    No calls are selected.
+  </div>
+</div>
