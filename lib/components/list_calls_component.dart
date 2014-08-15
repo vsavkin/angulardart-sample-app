@@ -1,14 +1,16 @@
 part of talk_to_me;
 
-@Controller(
-    selector: '[list-ctrl]',
-    publishAs: 'ctrl'
+@Component(
+    selector: 'list',
+    publishAs: 'ctrl',
+    templateUrl: 'lib/components/list_calls.html',
+    useShadowDom: false
 )
-class ListCtrl {
+class ListCallsComponent {
   List<Call> calls;
   Router router;
 
-  ListCtrl(CallStorage storage, this.router) {
+  ListCallsComponent(CallStorage storage, this.router) {
     calls = storage.all;
   }
 

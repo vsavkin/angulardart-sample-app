@@ -7,7 +7,6 @@ import 'dart:convert';
 import 'package:angular/angular.dart';
 import 'package:angular/routing/module.dart';
 import 'package:angular/animate/module.dart';
-import 'package:angular/application_factory.dart';
 import 'package:uuid/uuid_client.dart';
 
 part 'services/call_serializer.dart';
@@ -27,9 +26,9 @@ part 'components/agenda_component.dart';
 part 'components/agenda_item_component.dart';
 part 'components/global_alert_component.dart';
 
-part 'controllers/list_ctrl.dart';
-part 'controllers/create_call_ctrl.dart';
-part 'controllers/show_call_ctrl.dart';
+part 'components/list_calls_component.dart';
+part 'components/create_call_component.dart';
+part 'components/show_call_component.dart';
 
 part 'models/call.dart';
 part 'models/agenda_item.dart';
@@ -37,9 +36,9 @@ part 'models/user.dart';
 
 class TalkToMeApp extends Module {
   TalkToMeApp(){
-    bind(ListCtrl);
-    bind(CreateCallCtrl);
-    bind(ShowCallCtrl);
+    bind(ListCallsComponent);
+    bind(ShowCallComponent);
+    bind(CreateCallComponent);
 
     bind(AgendaItemTextInput);
     bind(AgendaItemComponent);
@@ -55,7 +54,7 @@ class TalkToMeApp extends Module {
     bind(GlobalAlertComponent);
 
     bind(RouteInitializerFn, toValue: talkToMeRouteInitializer);
-    bind(NgRoutingUsePushState, toFactory: (_) => new NgRoutingUsePushState.value(false));
+    bind(NgRoutingUsePushState, toValue: new NgRoutingUsePushState.value(false));
 
     bind(UrlRewriter, toImplementation: TalkToMeUrlRewriter);
 
@@ -63,12 +62,8 @@ class TalkToMeApp extends Module {
   }
 }
 
+@Injectable()
 class TalkToMeUrlRewriter implements UrlRewriter {
   String call(url) =>
-  url.startsWith('lib:') ? 'packages/talk_to_me/${url.substring(4)}' : url;
-}
-
-startTalkToMeApp(){
-  Injector inj = applicationFactory().addModule(new TalkToMeApp()).run();
-  GlobalHttpInterceptors.setUp(inj);
+      url.startsWith('lib/') ? 'packages/talk_to_me/${url.substring(4)}' : url;
 }

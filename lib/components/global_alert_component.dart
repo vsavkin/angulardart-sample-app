@@ -2,7 +2,7 @@ part of talk_to_me;
 
 @Component(
     selector: 'global-alert',
-    templateUrl: 'lib:components/global_alert.html',
+    templateUrl: 'lib/components/global_alert.html',
     publishAs: 'ctrl',
     useShadowDom: false
 )

@@ -3,8 +3,8 @@ part of talk_to_me_test;
 class CallStorageTestDouble extends TestDouble implements CallStorage {}
 class RouterTestDouble extends TestDouble implements Router {}
 
-testCreateCallCtrl(){
-  describe("[CreateCallCtrl]", (){
+testCreateCallComponent(){
+  describe("[CreateCallComponent]", (){
     describe("[create]", (){
       var storage, router;
 
@@ -17,7 +17,7 @@ testCreateCallCtrl(){
       });
 
       it("stores the call", (){
-        final c = new CreateCallCtrl(storage, router);
+        final c = new CreateCallComponent(storage, router);
 
         storage.shouldReceive("store").args(c.call);
 
@@ -27,7 +27,7 @@ testCreateCallCtrl(){
       });
 
       it("redirects to the show url", (){
-        final c = new CreateCallCtrl(storage, router);
+        final c = new CreateCallComponent(storage, router);
 
         router.shouldReceive("go").args("list.show", {"callId": "ID"});
 
