@@ -17,7 +17,7 @@ class Toggle implements AttachAware {
     whenOpen.hidden = true;
     whenClosed.hidden = true;
 
-    scope.watch("ctrl.open", (newValue, _) {
+    scope.watch("open", (newValue, _) {
       if(newValue) {
         whenOpen.hidden = false;
         whenClosed.hidden = true;

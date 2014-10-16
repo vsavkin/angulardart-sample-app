@@ -2,17 +2,17 @@
 
 <form class="input-group">
   <div class="agenda-item-input">
-    <input type="agenda-item" class="form-control" ng-model="ctrl.newAgendaItem"/>
-    <div class="hint" ng-if="ctrl.valid">
-      {{ctrl.newAgendaItem.description}}, Priority: {{ctrl.newAgendaItem.priority}}
+    <input type="agenda-item" class="form-control" ng-model="newAgendaItem"/>
+    <div class="hint" ng-if="valid">
+      {{newAgendaItem.description}}, Priority: {{newAgendaItem.priority}}
     </div>
   </div>
 
   <span class="input-group-btn">
-    <button type="submit" class="btn btn-default" ng-click="ctrl.addItem()" ng-disabled="!ctrl.valid">
+    <button type="submit" class="btn btn-default" ng-click="addItem()" ng-disabled="!valid">
       <span class="glyphicon glyphicon-plus"></span>
     </button>
   </span>
 </form>
 
-<agenda-item ng-repeat="item in ctrl.model | orderBy: extPriority" item="item" agenda="ctrl"></agenda-item>
+<agenda-item ng-repeat="item in model | orderBy: 'extPriority'" item="item"></agenda-item>

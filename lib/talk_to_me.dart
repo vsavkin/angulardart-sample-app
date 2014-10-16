@@ -57,6 +57,7 @@ class TalkToMeApp extends Module {
     bind(NgRoutingUsePushState, toValue: new NgRoutingUsePushState.value(false));
 
     bind(UrlRewriter, toImplementation: TalkToMeUrlRewriter);
+    bind(ResourceResolverConfig, toValue: new ResourceResolverConfig.resolveRelativeUrls(false));
 
     install(new AnimationModule());
   }

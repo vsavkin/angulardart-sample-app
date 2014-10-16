@@ -17,7 +17,6 @@ compileComponent(String html, Map scope, callback){
       final el = tb.compile(html, scope: s);
 
       microLeap();
-
       digest();
 
       callback(el);
@@ -34,12 +33,17 @@ testAgendaItemComponent(){;
     beforeEach(setUpInjector);
     afterEach(tearDownInjector);
 
-    describe("[swiching between modes]", () {
-      html() => '<agenda-item item="item" agenda="agenda"></agenda-item>';
-      scope() => {"item" : new AgendaItem("description", true, 1), "agenda" : new AgendaComponent()};
+    ddescribe("[swiching between modes]", () {
+      html() => '<agenda-item item="item"></agenda-item>';
+      scope() => {"item" : new AgendaItem("description", true, 1)};
 
       beforeEach((){
-        module((Module _) => _..bind(TestBed)..bind(AgendaItemComponent));
+        module((Module _) => _
+          ..bind(TestBed)
+          ..bind(AgendaItemComponent)
+          ..bind(AgendaComponent)
+          ..bind(ResourceResolverConfig, toValue: new ResourceResolverConfig.resolveRelativeUrls(false))
+        );
         return loadTemplates(['lib/components/agenda_item.html']);
       });
 
