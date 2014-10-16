@@ -3,8 +3,8 @@ part of talk_to_me;
 @Component(
     selector: 'agenda',
     templateUrl: 'lib/components/agenda.html',
-    publishAs: 'ctrl',
-    useShadowDom: false
+    useShadowDom: false,
+    exportExpressions: const ['extPriority']
 )
 class AgendaComponent {
   @NgOneWayOneTime("checkable")

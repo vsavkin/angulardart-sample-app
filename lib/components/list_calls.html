@@ -9,17 +9,17 @@
   </div>
 
   <ul>
-    <li ng-repeat="call in ctrl.calls | orderBy: 'name'" ng-class="{'selected' : ctrl.isSelected(call)}">
+    <li ng-repeat="call in calls | orderBy: 'name'" ng-class="{'selected' : isSelected(call)}">
       <a href="#/list/{{call.id}}/show">{{call.name}}</a>
     </li>
   </ul>
 </div>
 
 <div class="col-md-8">
-  <div ng-if="ctrl.isAnySelected">
+  <div ng-if="isAnySelected">
     <ng-view></ng-view>
   </div>
-  <div ng-if="!ctrl.isAnySelected" class="empty-call">
+  <div ng-if="!isAnySelected" class="empty-call">
     No calls are selected.
   </div>
 </div>

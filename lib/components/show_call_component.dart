@@ -2,21 +2,23 @@ part of talk_to_me;
 
 @Component(
     selector: "show-call",
-    publishAs: "ctrl",
     exportExpressions: const ['watchExp'],
     templateUrl: 'lib/components/show_call.html',
     useShadowDom: false
 )
-class ShowCallComponent {
+class ShowCallComponent implements ScopeAware {
   Call call;
   CallStorage storage;
   CallSerializer serializer;
   bool userIsOnline = false;
 
   ShowCallComponent(this.storage, this.serializer, RouteProvider routeProvider,
-      Scope scope, UsersRepository repo){
+      UsersRepository repo){
     call = storage.find(_callId(routeProvider));
     _checkIfOnline(call.name, repo.all());
+  }
+
+  void set scope(Scope scope) {
     scope.watch("watchExp()", _store, context: this);
   }
 

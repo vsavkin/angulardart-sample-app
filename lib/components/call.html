@@ -1,23 +1,23 @@
 <div class="row call-row">
-  <toggle toggle-property="ctrl.open" ng-class="{'open': ctrl.open}">
+  <toggle toggle-property="open" ng-class="{'open': open}">
     <when-closed>
-      <div ng-if="ctrl.isOnline">
-        <button class="btn btn-default" ng-click="ctrl.open = true">
+      <div ng-if="isOnline">
+        <button class="btn btn-default" ng-click="open = true">
           <span class="glyphicon glyphicon-earphone"></span> Call
         </button>
       </div>
 
-      <div ng-if="!ctrl.isOnline">
-        {{ctrl.model.name}} is Offline
+      <div ng-if="!isOnline">
+        {{model.name}} is Offline
       </div>
     </when-closed>
 
     <when-open>
-      <video ng-src="{{ctrl.videoSrc}}" width="213" height="161" autoplay="autoplay" class="video-box"></video>
+      <video ng-src="{{videoSrc}}" width="213" height="161" autoplay="autoplay" class="video-box"></video>
       <span class="glyphicon glyphicon-transfer video-box-transfer"></span>
       <img src="images/cat.jpg" class="video-box">
 
-      <button class="btn btn-default" ng-click="ctrl.open = false">
+      <button class="btn btn-default" ng-click="open = false">
         <span class="glyphicon glyphicon-phone-alt"></span> Hang up
       </button>
     </when-open>

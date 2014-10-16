@@ -3,13 +3,12 @@ part of talk_to_me;
 @Component(
     selector: 'global-alert',
     templateUrl: 'lib/components/global_alert.html',
-    publishAs: 'ctrl',
     useShadowDom: false
 )
-class GlobalAlertComponent {
+class GlobalAlertComponent implements ScopeAware {
   String message;
 
-  GlobalAlertComponent(Scope scope) {
+  void set scope(Scope scope) {
     scope.on("globalAlert").listen(this._showMessage);
   }
 

@@ -6,15 +6,15 @@
   <form name="createForm">
     <div class="row">
       <h3>Name</h3>
-      <input class="form-control" type="text" ng-model="ctrl.call.name" ng-required="true">
+      <input class="form-control" type="text" ng-model="call.name" ng-required="true">
     </div>
 
     <div class="row">
-      <agenda model="ctrl.call.agenda" checkable="false"></agenda>
+      <agenda model="call.agenda" checkable="false"></agenda>
     </div>
 
     <div class="row create-row">
-      <button class="btn btn-primary btn-block" type="submit" ng-click="ctrl.create()" ng-disabled="createForm.invalid">Create</button>
+      <button class="btn btn-primary btn-block" type="submit" ng-click="create()" ng-disabled="createForm.invalid">Create</button>
     </div>
   </form>
 </div>
