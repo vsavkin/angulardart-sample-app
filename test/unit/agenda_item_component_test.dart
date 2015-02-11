@@ -33,7 +33,7 @@ testAgendaItemComponent(){;
     beforeEach(setUpInjector);
     afterEach(tearDownInjector);
 
-    ddescribe("[swiching between modes]", () {
+    describe("[swiching between modes]", () {
       html() => '<agenda-item item="item"></agenda-item>';
       scope() => {"item" : new AgendaItem("description", true, 1)};
 
